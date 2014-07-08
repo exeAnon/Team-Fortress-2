@@ -1,4 +1,3 @@
-Team-Fortress-2
-===============
+# TF2 CFGs & Mods
 
-Config scripts &amp; other
+Mostly a backup of my configs, but people have asked for my configs as well, so here they are.
