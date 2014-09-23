@@ -1,0 +1,175 @@
+"Resource/UI/CharInfoPanel.res"
+{
+	"character_info"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"character_info"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"f0"
+		"tall"			"480"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"settitlebarvisible"	"0"
+		"settitlebarvisible"	"1" [$OSX]
+		"PaintBackgroundType"	"0"
+		"bgcolor_override"				"46 43 42 0"
+		"infocus_bgcolor_override"		"46 43 42 0"
+		"outoffocus_bgcolor_override"	"46 43 42 0"
+		"bgcolor_override"				"46 43 42 255" [$OSX]
+		"infocus_bgcolor_override"		"46 43 42 255" [$OSX]
+		"outoffocus_bgcolor_override"	"46 43 42 255" [$OSX]
+		
+		"title"			""
+		"title_font"	"G_FontTiny"
+		"titletextinsetX"	"40"
+		"titletextinsetY"	"0"
+		"titlebarfgcolor_override"				"200 187 161 255"
+		"titlebardisabledfgcolor_override"		"200 187 161 255"
+		"titlebarbgcolor_override"				"46 43 42 255"
+		
+		"clientinsetx_override"			"0"
+		"sheetinset_bottom"				"60"
+		"sheetinset_bottom"				"50" [$OSX]
+	}
+	
+	"BackgroundHeader"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"BackgroundHeader"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-2"
+		"wide"			"f0"
+		"tall"			"50"
+		"visible"		"0"
+		"enabled"		"0"
+		"image"			"loadout_header"
+		"tileImage"		"1"
+	}	
+	
+	"G_BackgroundHeader"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"G_BackgroundHeader"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-2"
+		"wide"			"f0"
+		"tall"			"50"
+		"visible"		"1"
+		"enabled"		"1"
+		"paintbackground"	"1"
+		"bgcolor_override"	"G_ToonHUD"
+	}
+	
+	"BackgroundFooter"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"BackgroundFooter"
+		"xpos"			"0"
+		"ypos"			"420"
+		"zpos"			"1"
+		"wide"			"f0"
+		"tall"			"60"
+		"visible"		"1"
+		"enabled"		"1"
+		"paintbackground"	"1"
+		"bgcolor_override"	"G_Footer"
+	}	
+	
+	"FooterLine"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"FooterLine"
+		"xpos"			"0"
+		"ypos"			"420"
+		"zpos"			"2"
+		"wide"			"f0"
+		"tall"			"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"paintbackground"	"1"
+		"bgcolor_override"	"G_ToonHUD"
+	}			
+	
+	"Sheet"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"Sheet"
+		"tabxindent"	"50"
+		"tabxdelta"		"10"
+		"tabwidth"		"240"
+		"tabheight"		"30"
+		"transition_time" "0"
+		
+		"HeaderLine"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"HeaderLine"
+			"xpos"			"0"
+			"ypos"			"29"
+			"zpos"			"5"
+			"wide"			"f0"
+			"tall"			"10"
+			"visible"		"0"
+			"enabled"		"1"
+			"image"			"loadout_solid_line"
+			"scaleImage"	"1"
+		}				
+		
+		"tabskv"
+		{ 
+			"textinsetx"		"5"
+			"font"				"G_FontMedium"
+			"selectedcolor"		"G_White"
+			"unselectedcolor"	"G_BrownBg"	
+			"defaultBgColor_override"	"G_BrownBg"
+			"paintbackground"	"0"
+			"paintborder"		"0"
+			"activeborder_override"	""
+			"normalborder_override" ""
+		}
+	}
+	
+	"BackButton"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"BackButton"
+		"xpos"			"c-295"
+		"ypos"			"437"
+		"zpos"			"2"
+		"wide"			"100"
+		"tall"			"25"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"#TF_BackCarat"
+		"font"			"HudFontSmallBold"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"default"		"0"
+		"Command"		"back"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+	}		
+	
+	"NotificationsPresentPanel"
+	{
+		"ControlName"	"CNotificationsPresentPanel"
+		"fieldName"		"NotificationsPresentPanel"
+		"xpos"			"r200"
+		"ypos"			"10"
+		"zpos"			"10000"
+		"wide"			"190"
+		"tall"			"50"
+		"visible"		"0"
+		"enabled"		"1"
+	}
+}
