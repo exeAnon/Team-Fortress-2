@@ -186,13 +186,13 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"TFCharacterImage"
-		"xpos"			"c-250" // 1 RMMC
-		"ypos"			"-80" // 1 RMMC
+		"xpos"			"-9999" // 1 RMMC
+		"ypos"			"-9999" // 1 RMMC
 		"zpos"			"-99"
-		"wide"			"600" // 2 RMMC
-		"tall"			"600" // 2 RMMC
-		"visible"		"1" // 2 RMMC
-		"enabled"		"1" // 2 RMMC
+		"wide"			"0" // 2 RMMC
+		"tall"			"0" // 2 RMMC
+		"visible"		"0" // 2 RMMC
+		"enabled"		"0" // 2 RMMC
 		"scaleImage"	"1"
 	}
 	
@@ -3531,7 +3531,7 @@
 		"font"			"DefaultVerySmall"
 		"defaultBgColor_override" "0 0 0 150"
 		"defaultFgColor_override" "G_White"
-		"Command"		"engine mp_tournament 1; map cp_warmfront" // 3 BM1
+		"Command"		"engine exec mode_comp.cfg; map cp_warmfront" // 3 BM1
 	}
 	
 	Bookmark_2 {
@@ -3545,11 +3545,11 @@
 		"visible"		"1" // 1 BM2
 		"enabled"		"1"
 		"textAlignment"	"center"
-		"labelText"		"Rocket Jump" // 2 BM2
+		"labelText"		"Mann vs. Machine" // 2 BM2
 		"font"			"DefaultVerySmall"
 		"defaultBgColor_override" "0 0 0 150"
 		"defaultFgColor_override" "G_White"
-		"Command"		"engine exec map_base; map plr_hightower" // 3 BM2
+		"Command"		"engine map mvm_decoy" // 3 BM2
 	}
 	
 	Bookmark_3 {
@@ -3560,14 +3560,14 @@
 		"zpos"			"2"
 		"wide"			"57"
 		"tall"			"15"
-		"visible"		"0" // 1 BM3
+		"visible"		"1" // 1 BM3
 		"enabled"		"1"
 		"textAlignment"	"center"
-		"labelText"		"Bookmark 3" // 2 BM3
+		"labelText"		"Rocket Jump" // 2 BM3
 		"font"			"DefaultVerySmall"
 		"defaultBgColor_override" "0 0 0 150"
 		"defaultFgColor_override" "G_White"
-		"Command"		"" // 3 BM3
+		"Command"		"engine exec mode_jump; map plr_hightower" // 3 BM3
 	}
 	
 	Bookmark_4 {
@@ -3591,7 +3591,7 @@
 	Console {
 		"ControlName"	"CExButton"
 		"fieldName"		"Console"
-		"xpos"			"r192"
+		"xpos"			"r195"
 		"ypos"			"r13"
 		"zpos"			"1"
 		"wide"			"35"
@@ -3608,7 +3608,7 @@
 	DefaultHud {
 		"ControlName"	"CExButton"
 		"fieldName"		"DefaultHud"
-		"xpos"			"r154"
+		"xpos"			"r157"
 		"ypos"			"r13"
 		"zpos"			"3"
 		"wide"			"30"
@@ -3625,7 +3625,7 @@
 	CenteredHud {
 		"ControlName"	"CExButton"
 		"fieldName"		"CenteredHud"
-		"xpos"			"r129"
+		"xpos"			"r132"
 		"ypos"			"r13"
 		"zpos"			"2"
 		"wide"			"38"
@@ -3642,7 +3642,7 @@
 	ReloadHud {
 		"ControlName"	"CExButton"
 		"fieldName"		"ReloadHud"
-		"xpos"			"r88"
+		"xpos"			"r91"
 		"ypos"			"r13"
 		"zpos"			"2"
 		"wide"			"35"
@@ -3659,17 +3659,17 @@
 	HudVersion {
 		"ControlName"	"CExLabel"
 		"fieldName"		"HudVersion"
-		"xpos"			"r50"
+		"xpos"			"r53"
 		"ypos"			"r13"
 		"zpos"			"1"
-		"wide"			"47"
+		"wide"			"50"
 		"tall"			"11"
 		"visible"		"1"
 		"enabled"		"1"
 		"textAlignment"	"center"
 		"font"			"DefaultVerySmall"
 		
-		"labelText"		"ToonHUD 4.6"
+		"labelText"		"ToonHUD 4.7"
 	}
 
 }
