@@ -38,9 +38,64 @@
 		"page_button_y"	"332" [$OSX]
 		"page_button_x_delta" "2"
 		"page_button_y_delta" "2"
-		"page_button_per_row" "20" // Backpack pages
+		"page_button_per_row" "20"
 		"page_button_height" "12"
-		"page_button_height" "10" //MAC
+		"page_button_height" "10" [$OSX]
+		
+		"pagebuttons_kv"
+		{
+			"ControlName"	"EditablePanel"
+			"wide"			"10"
+			"tall"			"10"
+			"visible"		"0"
+			"bgcolor_override"		"0 0 0 0"
+			"noitem_textcolor"		"117 107 94 255"
+			"PaintBackgroundType"	"2"
+			"paintborder"	"1"
+
+			"Button"
+			{
+				"fieldName"		"Button"
+				"ControlName"	"CExButton"
+				"wide"			"25"
+				"tall"			"12"
+				"tall"			"10" [$OSX]
+				"visible"		"1"
+				"bgcolor_override"		"0 0 0 0"
+				"noitem_textcolor"		"117 107 94 255"
+				"PaintBackgroundType"	"2"
+				"paintborder"	"1"
+				"textAlignment"	"center"
+				"labelText"		"%page%"
+				"font"				"HudFontSmallestBold"
+				"sound_depressed"	"UI/buttonclick.wav"
+				"sound_released"	"UI/buttonclickrelease.wav"
+			}
+
+			"New"
+			{
+				"ControlName"	"CExLabel"
+				"fieldName"		"New"
+				"font"			"FontStorePrice"
+				"textAlignment"	"east"
+				"ypos"			"0"
+				"xpos"			"0"
+				"zpos"			"0"
+				"wide"			"f1"
+				"tall"			"f-3"
+				"textinsetx"	"8"
+				"autoResize"	"1"
+				"pinCorner"		"0"	
+				"visible"		"0"
+				"enabled"		"1"
+				"labelText"		"#Store_Price_New"
+				"mouseinputenabled" "0"
+				"paintbackground"	"0"
+				"proportionaltoparent"	"1"
+				"border"		"StoreNewBorder"
+				"fgcolor"		"10 10 10 255"
+			}
+		}
 		
 		"modelpanels_kv"
 		{

@@ -44,7 +44,7 @@ Scheme
 		"G_Warning"				"231 76 60 255" // Warning color
 		"G_HealthValue"			"255 255 255 255" // Health value color
 		"G_Overheal"			"145 200 255 255" // Overhealed health value color
-		"G_LowHealthValue"		"255 255 255 255" // Low health value color
+		"G_LowHealthValue"		"255 128 128 255" // Low health value color
 		"G_AmmoClipValue"		"255 255 255 255" // Ammo in clip value color
 		"G_AmmoReserveValue"	"255 255 255 255" // Ammo in reserve value color
 		"G_MetalValue"			"255 255 255 255" // Metal color
@@ -182,11 +182,12 @@ Scheme
 		"ItemBundleItem"						"149 175 12 255"
 		"ItemLimitedUse"						"0 160 0 255"
 		"ItemFlags"								"117 107 94 255"
+		"ItemLimitedQuantity"					"225 209 0 255"
 		
 		"QualityColorNormal"					"178 178 178 255"
 		"QualityColorrarity1"					"77 116 85 255"
 		"QualityColorrarity2"					"141 131 75 255"
-		"QualityColorrarity3"					"112 85 15 255"
+		"QualityColorrarity3"					"204 204 250 255"
 		"QualityColorrarity4"					"134 80 172 255"
 		"QualityColorVintage"					"71 98 145 255"
 		"QualityColorUnique"					"255 215 0 255"
