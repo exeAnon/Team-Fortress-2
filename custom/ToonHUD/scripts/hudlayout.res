@@ -88,12 +88,12 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"zpos"			"1"
-		"xpos"			"c+100" // 1 BPM
-		"ypos"			"r90" // 2 BPM
-		"xpos_minmode"	"c+80" // 3 BPM
-		"ypos_minmode"	"r121" // 4 BPM
-		"wide"			"180" // 5 BPM
-		"tall"			"8" // 6 BPM
+		"xpos"			"c-15" // 1 BPM
+		"ypos"			"c20" // 2 BPM
+		"xpos_minmode"	"c-15" // 3 BPM
+		"ypos_minmode"	"c20" // 4 BPM
+		"wide"			"30" // 5 BPM
+		"tall"			"5" // 6 BPM
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
 	}		
@@ -298,8 +298,8 @@
 		"visible"	"1"
 		"enabled"	"1"
 		"xpos"		"0"
-		"ypos"		"0" // 1 TLC
-		"ypos_minmode"	"0" // 2 TLC
+		"ypos"		"120" // 1 TLC
+		"ypos_minmode"	"110" // 2 TLC
 		"wide"		"640"
 		"tall"		"480"
 	}
@@ -1205,12 +1205,12 @@
 	{
 		"ControlName"			"EditablePanel"
 		"fieldName"				"HudAchievementTracker"
-		"xpos"					"5"		// 3 TLC
-		"xpos_minmode"			"5"		// 4 TLC
-		"NormalY"				"10"	// 5 TLC
-		"EngineerY"				"170"	// 6 TLC
-		"NormalY_minmode"		"10"	// 7 TLC
-		"EngineerY_minmode"		"170"	// 8 TLC
+		"xpos"					"2"		// 3 TLC
+		"xpos_minmode"			"c-260"		// 4 TLC
+		"NormalY"				"135"	// 5 TLC
+		"EngineerY"				"300"	// 6 TLC
+		"NormalY_minmode"		"380"	// 7 TLC
+		"EngineerY_minmode"		"360"	// 8 TLC
 		"zpos"					"2"
 		"wide"					"200"
 		"tall"					"280"

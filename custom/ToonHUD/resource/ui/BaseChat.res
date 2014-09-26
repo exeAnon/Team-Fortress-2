@@ -7,9 +7,9 @@
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos" 			"2"
-		"xpos_minmode" 	"80"
-		"ypos" 			"250"
-		"ypos_minmode" 	"r114"
+		"xpos_minmode" 	"2"
+		"ypos" 			"2"
+		"ypos_minmode" 	"2"
 		"zpos" 			"9"
 		"wide"			"300"
 		"wide_minmode"	"268"
@@ -17,7 +17,7 @@
 		"tall_minmode" 	"114"
 		"PaintBackgroundType" "2"
 		"paintbackground"	"1"
-		"bgcolor_override"	"0 0 0 255" // Chat color
+		"bgcolor_override"	"47 75 102 255" // Chat color
 	}
 
 	ChatInputLine

@@ -272,7 +272,7 @@
 		"fieldName"		"PlayerStatusHealthBonusImage"
 		"xpos"			"c-192"	// HOC
 		"ypos"			"r87"
-		"xpos_minmode"	"c-172" // HOC
+		"xpos_minmode"	"c-172"
 		"ypos_minmode"	"c+53"		
 		"zpos"			"3"
 		"wide"			"60"
