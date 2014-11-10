@@ -238,12 +238,12 @@
 		"font"			"G_Slash"
 		"labelText"		"/"
 		"textAlignment"	"west"
-		"xpos"			"c-10"
-		"xpos"			"c-11" [$OSX]
+		"xpos"			"c-10" [$WIN32]
+		"xpos"			"c-11" [!$WIN32]
 		"ypos"			"r26"
 		"wide"			"20"
-		"tall"			"20"
-		"tall"			"21" [$OSX]
+		"tall"			"20" [$WIN32]
+		"tall"			"21" [!$WIN32]
 		"zpos"			"4"
 		"autoResize"	"0"
 		"pinCorner"		"0"

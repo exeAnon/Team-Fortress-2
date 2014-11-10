@@ -140,6 +140,14 @@
 		{
 			"image"		"../console/title_team_halloween2012"
 		}
+		if_halloween_2
+		{
+			"image"		"../console/title_team_halloween2013"
+		}
+		if_halloween_3
+		{
+			"image"		"../console/title_team_halloween2014"
+		}
 		if_fullmoon
 		{
 			"image"		"../console/title_fullmoon"
@@ -3524,14 +3532,14 @@
 		"zpos"			"2"
 		"wide"			"57"
 		"tall"			"15"
-		"visible"		"1" // 1 BM1
+		"visible"		"0" // 1 BM1
 		"enabled"		"1"
 		"textAlignment"	"center"
-		"labelText"		"Competitive" // 2 BM1
+		"labelText"		"Bookmark 1" // 2 BM1
 		"font"			"DefaultVerySmall"
 		"defaultBgColor_override" "0 0 0 150"
 		"defaultFgColor_override" "G_White"
-		"Command"		"engine exec mode_comp.cfg; map cp_warmfront" // 3 BM1
+		"Command"		"" // 3 BM1
 	}
 	
 	Bookmark_2 {
@@ -3542,14 +3550,14 @@
 		"zpos"			"2"
 		"wide"			"57"
 		"tall"			"15"
-		"visible"		"1" // 1 BM2
+		"visible"		"0" // 1 BM2
 		"enabled"		"1"
 		"textAlignment"	"center"
-		"labelText"		"Mann vs. Machine" // 2 BM2
+		"labelText"		"Bookmark 2" // 2 BM2
 		"font"			"DefaultVerySmall"
 		"defaultBgColor_override" "0 0 0 150"
 		"defaultFgColor_override" "G_White"
-		"Command"		"engine map mvm_decoy" // 3 BM2
+		"Command"		"" // 3 BM2
 	}
 	
 	Bookmark_3 {
@@ -3560,14 +3568,14 @@
 		"zpos"			"2"
 		"wide"			"57"
 		"tall"			"15"
-		"visible"		"1" // 1 BM3
+		"visible"		"0" // 1 BM3
 		"enabled"		"1"
 		"textAlignment"	"center"
-		"labelText"		"Rocket Jump" // 2 BM3
+		"labelText"		"Bookmark 3" // 2 BM3
 		"font"			"DefaultVerySmall"
 		"defaultBgColor_override" "0 0 0 150"
 		"defaultFgColor_override" "G_White"
-		"Command"		"engine exec mode_jump; map plr_hightower" // 3 BM3
+		"Command"		"" // 3 BM3
 	}
 	
 	Bookmark_4 {
@@ -3669,7 +3677,7 @@
 		"textAlignment"	"center"
 		"font"			"DefaultVerySmall"
 		
-		"labelText"		"ToonHUD 4.7"
+		"labelText"		"ToonHUD 5.0"
 	}
 
 }

@@ -90,12 +90,12 @@
 			"font"			"G_Slash"
 			"labelText"		"/"
 			"textAlignment"	"west"
-			"xpos"			"89"
-			"xpos"			"88" [$OSX]
+			"xpos"			"89" [$WIN32]
+			"xpos"			"88" [!$WIN32]
 			"ypos"			"20"
 			"wide"			"20"
-			"tall"			"20"
-			"tall"			"21" [$OSX]
+			"tall"			"20" [$WIN32]
+			"tall"			"21" [!$WIN32]
 			"zpos"			"2"
 			"autoResize"	"0"
 			"pinCorner"		"0"

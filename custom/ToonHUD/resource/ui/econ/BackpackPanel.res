@@ -77,24 +77,28 @@
 				"ControlName"	"CExLabel"
 				"fieldName"		"New"
 				"font"			"FontStorePrice"
-				"textAlignment"	"east"
+				"textAlignment"	"center"
 				"ypos"			"0"
 				"xpos"			"0"
 				"zpos"			"0"
 				"wide"			"f1"
-				"tall"			"f-3"
-				"textinsetx"	"8"
+				"tall"			"12"
+				"tall"			"10" [$OSX]
+				"textinsety"	"1"
+				"textinsetx"	"0"
 				"autoResize"	"1"
 				"pinCorner"		"0"	
 				"visible"		"0"
 				"enabled"		"1"
 				"labelText"		"#Store_Price_New"
 				"mouseinputenabled" "0"
-				"paintbackground"	"0"
+				"paintbackground"	"1"
+				"bgcolor_override"	"G_Yellow"
 				"proportionaltoparent"	"1"
-				"border"		"StoreNewBorder"
-				"fgcolor"		"10 10 10 255"
+				"border"		"ButtonBorder"
+				"fgcolor"		"G_Black"
 			}
+			
 		}
 		
 		"modelpanels_kv"
@@ -128,6 +132,32 @@
 			{
 				"use_item_rendertarget" "0"
 				"allow_rot"				"0"
+			}
+			
+			"New"
+			{
+				"ControlName"	"CExLabel"
+				"fieldName"		"New"
+				"font"			"FontStorePrice"
+				"textAlignment"	"center"
+				"ypos"			"r11"
+				"xpos"			"0"
+				"zpos"			"15"
+				"wide"			"54"
+				"tall"			"11"
+				"textinsetx"	"0"
+				"textinsety"	"-1"
+				"autoResize"	"1"
+				"pinCorner"		"0"	
+				"visible"		"0"
+				"enabled"		"1"
+				"labelText"		"#Store_Price_New"
+				"mouseinputenabled" "0"
+				"paintbackground"	"1"
+				"bgcolor_override"	"0 0 0 160"
+				"proportionaltoparent"	"1"
+				"border"		""
+				"fgcolor"		"G_Yellow"
 			}
 			
 			"use_item_sounds"	"1"

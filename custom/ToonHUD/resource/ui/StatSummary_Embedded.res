@@ -285,8 +285,8 @@
 			"xpos"			"c-285"
 			"xpos_hidef"			"c-193"
 			"xpos_lodef"			"c-193"
-			"ypos"			"170" [!$OSX]
-			"ypos"			"185" [$OSX]
+			"ypos"			"170" [$WIN32]
+			"ypos"			"185" [!$WIN32]
 			"ypos_hidef"			"32"
 			"ypos_lodef"			"32"
 			"wide"			"300"
@@ -1669,8 +1669,8 @@
 			"labelText"		"#StatSummary_Label_BestMoments"
 			"textAlignment"		"west"
 			"xpos"			"c+124"
-			"ypos"			"170" [!$OSX]
-			"ypos"			"180" [$OSX]
+			"ypos"			"170" [$WIN32]
+			"ypos"			"180" [!$WIN32]
 			"wide"			"300"
 			"tall"			"20"
 			"autoResize"	"0"
@@ -2260,8 +2260,8 @@
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"TipImage"
 		"xpos"			"c-285"
-		"ypos"			"340"
-		"ypos"			"335" [$OSX]
+		"ypos"			"340" [$WIN32]
+		"ypos"			"335" [!$WIN32]
 		"zpos"			"12"
 		"wide"			"40"
 		"tall"			"40"
@@ -2294,8 +2294,8 @@
 		"fieldName"		"NextTipButton"
 		"font"			"Default"
 		"xpos"			"c-235"
-		"ypos"			"365"
-		"ypos"			"360" [$OSX]
+		"ypos"			"365" [$WIN32]
+		"ypos"			"360" [!$WIN32]
 		"zpos"			"6"
 		"wide"			"40"
 		"tall"			"15"

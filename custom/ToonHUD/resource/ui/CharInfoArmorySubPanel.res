@@ -349,8 +349,8 @@
 		"ControlName"	"CExButton"
 		"fieldName"		"WikiButton"
 		"xpos"			"c-30"
-		"ypos"			"347"
-		"ypos"			"339" [$OSX]
+		"ypos"			"347" [$WIN32]
+		"ypos"			"339" [!$WIN32]
 		"zpos"			"20"
 		"wide"			"155"
 		"tall"			"25"
@@ -375,8 +375,8 @@
 		"ControlName"	"CExButton"
 		"fieldName"		"ViewSetButton"
 		"xpos"			"c-195"
-		"ypos"			"347"
-		"ypos"			"339" [$OSX]
+		"ypos"			"347" [$WIN32]
+		"ypos"			"339" [!$WIN32]
 		"zpos"			"20"
 		"wide"			"155"
 		"tall"			"25"
@@ -401,8 +401,8 @@
 		"ControlName"	"CExButton"
 		"fieldName"		"StoreButton"
 		"xpos"			"c136"
-		"ypos"			"347"
-		"ypos"			"339" [$OSX]
+		"ypos"			"347" [$WIN32]
+		"ypos"			"339" [!$WIN32]
 		"zpos"			"20"
 		"wide"			"155"
 		"tall"			"25"

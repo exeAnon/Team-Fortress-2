@@ -247,6 +247,12 @@
 		"tall_minmode"	 	"28"
 		"priority"	"40"
 		"priority_lodef"	"5"
+		
+		if_vr
+		{
+			"ypos"		"370"
+			"x_offset"	"20"
+		}
 	}
 	
 	CSpectatorTargetID
@@ -452,18 +458,18 @@
 		"wide"	 "628"
 		"tall"	 "468"
 
-		"MaxDeathNotices" "4" // 1 SKF
+		"MaxDeathNotices" "4" // 1 KF
 		"IconScale"		"0.35"
-		"LineHeight"	"13" // 2 SKF
-		"LineSpacing"	"4"
-		"CornerRadius"	"3"
+		"LineHeight"	"16" // 3 KF
+		"LineSpacing"	"4" // 4 KF
+		"CornerRadius"	"4" // 2 KF
 		"RightJustify"	"1"	// If 1, draw notices from the right
 		
-		"TextFont"		"Default" // 3 SKF
+		"TextFont"		"G_FontKillfeed" // 5 KF
 		
-		"TeamBlue"		"HUDBlueTeamSolid"
-		"TeamRed"		"HUDRedTeamSolid"
-		"IconColor"		"HudWhite"
+		"TeamBlue"		"G_KillfeedBlue"
+		"TeamRed"		"G_KillfeedRed"
+		"IconColor"		"G_KillfeedIcon"
 		"LocalPlayerColor"	"HUDBlack"
 
 		"BaseBackgroundColor"	"G_Killfeed_Base"
@@ -1376,5 +1382,16 @@
 		"wide_minmode"			"463"
 		"tall_minmode"			"99"
 		"PaintBackgroundType"	"0"
+	}
+	
+	HudMiniGame
+	{
+		"fieldName" "HudMiniGame"
+		"visible" "1"
+		"enabled" "1"
+		"xpos"	"0"
+		"ypos"	"0"
+		"wide"	"f0"
+		"tall"	"480"
 	}
 }

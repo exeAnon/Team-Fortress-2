@@ -23,7 +23,7 @@ Scheme
 		"G_White"				"255 255 255 255"
 		"G_Black"				"0 0 0 255"
 		"G_Red"					"230 0 0 255"
-		"G_Shadow"				"0 0 0 255" // Shadow color
+		"G_Shadow"				"0 0 0 220" // Shadow color
 		"G_LightShadow"			"0 0 0 110"
 		"G_Dying"				"212 0 0 230"
 		"G_Heal"				"127 224 74 255" // Heal color
@@ -38,13 +38,13 @@ Scheme
 		"G_LightGrey"			"180 180 180 255"
 		"G_HealthBarBg"			"0 0 0 220"
 		"G_CurrencyBad"			"255 60 60 255"
-		"G_TransparentMenuBG"	"46 43 42 255" // Transparent menu color
+		"G_TransparentMenuBG"	"46 43 42 252" // Transparent menu color
 		"G_PanelBg"				"46 43 42 220" // Panel color
 		"G_Shine"				"255 255 255 0" // Shine color
 		"G_Warning"				"231 76 60 255" // Warning color
 		"G_HealthValue"			"255 255 255 255" // Health value color
-		"G_Overheal"			"145 200 255 255" // Overhealed health value color
-		"G_LowHealthValue"		"255 128 128 255" // Low health value color
+		"G_Overheal"			"85 170 255 255" // Overhealed health value color
+		"G_LowHealthValue"		"255 255 255 255" // Low health value color
 		"G_AmmoClipValue"		"255 255 255 255" // Ammo in clip value color
 		"G_AmmoReserveValue"	"255 255 255 255" // Ammo in reserve value color
 		"G_MetalValue"			"255 255 255 255" // Metal color
@@ -56,12 +56,12 @@ Scheme
 		"G_CrosshairColor"				"255 255 255 255" // Crosshair color
 		"G_CrosshairShadowColor"		"0 0 0 255"	// Crosshair shadow color
 		"G_CrosshairColorLowHealth"		"255 255 255 255" // Crosshair color when low health
-		"G_HitmarkerColor"				"255 0 0 150" // Hitmarker color
+		"G_HitmarkerColor"				"255 255 255 150" // Hitmarker color
 		"G_StickyColor"					"255 255 255 255" // Stickybomb color
 		"G_StickyIconColor"				"255 255 255 255" // Stickybomb icon color
 		"G_CustomTargetID" 				"0 0 0 100" // Custom target id bg color
 		"G_Killfeed_Base"		"46 43 42 0" // Killfeed Base color
-		"G_Killfeed_Local"		"245 229 196 255" // Killfeed Local color
+		"G_Killfeed_Local"		"245 229 196 210" // Killfeed Local color
 		"G_ToonHUD"				"231 76 60 255" // ToonHUD color
 		"G_CenteredMetalBg"		"60 60 60 120" // Centered metal background color
 		"G_CenteredUberchargeBg" "0 0 0 100" // Centered ubercharge meter background color
@@ -79,6 +79,10 @@ Scheme
 		"G_OuterBorder"		"0 0 0 255" // Outer border color
 		"G_InnerBorder"		"255 255 255 50" // Inner border color
 		"G_ItemEffectMeterLineColor"	"120 120 120 130"
+		"G_KillfeedBlue"	"104 124 155 255" // Killfeed blue text
+		"G_KillfeedRed"		"180 92 77 255" // Killfeed red text
+		"G_KillfeedIcon"	"255 255 255 255" // Killfeed icon color
+		"G_CustomHealthValue"	"120 120 120 255"
 		
 	
 		// base colors
@@ -571,7 +575,7 @@ Scheme
 			{
 				"name"			"ToonHUD Icons"
 				"tall"			"23"
-				"tall"			"37" [$OSX]
+				"tall"			"37" [!$WIN32]
 				"weight"		"400"
 				"additive"		"0"
 				"antialias" 	"1"
@@ -584,7 +588,7 @@ Scheme
 			{
 				"name"			"ToonHUD Icons"
 				"tall"			"19"
-				"tall"			"30" [$OSX]
+				"tall"			"30" [!$WIN32]
 				"weight"		"400"
 				"additive"		"0"
 				"antialias" 	"1"
@@ -597,7 +601,7 @@ Scheme
 			{
 				"name"			"ToonHUD Icons"
 				"tall"			"20"
-				"tall"			"25" [$OSX]
+				"tall"			"25" [!$WIN32]
 				"weight"		"400"
 				"additive"		"0"
 				"antialias" 	"1"
@@ -610,7 +614,7 @@ Scheme
 			{
 				"name"			"ToonHUD Icons"
 				"tall"			"8"
-				"tall"			"10" [$OSX]
+				"tall"			"10" [!$WIN32]
 				"weight"		"400"
 				"additive"		"0"
 				"antialias" 	"1"
@@ -623,7 +627,7 @@ Scheme
 			{
 				"name"			"ToonHUD Icons"
 				"tall"			"12"
-				"tall"			"18" [$OSX]
+				"tall"			"18" [!$WIN32]
 				"weight"		"400"
 				"additive"		"0"
 				"antialias" 	"1"
@@ -667,6 +671,7 @@ Scheme
 			}
 		}
 		
+
 		"G_CrosshairShadowSharp"
 		{
 			"1"
@@ -692,14 +697,13 @@ Scheme
 			}
 		}
 
-
 		
 		"G_FontHuge"
 		{
 			"1"
 			{
-				"name"			"Gobold"	// Primary font
-				"name"			"TF2 Build" [$OSX]
+				"name"			"TF2 Build" // Primary font
+				"name"			"TF2 Build" [!$WIN32]
 				"tall"			"50" // Size Huge Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -711,9 +715,9 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Gobold"	// Primary font
-				"name"			"TF2 Build" [$OSX]
-				"tall"			"32" // Size Big Primary
+				"name"			"TF2 Build" // Primary font
+				"name"			"TF2 Build" [!$WIN32]
+				"tall"			"43" // Size Big Primary
 				"weight"		"0"
 				"additive"		"0"
 				"antialias"		"1"
@@ -724,8 +728,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Gobold"	// Primary font
-				"name"			"TF2 Build" [$OSX]
+				"name"			"TF2 Build" // Primary font
+				"name"			"TF2 Build" [!$WIN32]
 				"tall"			"20" // Size Medium Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -737,8 +741,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Gobold"	// Primary font
-				"name"			"TF2 Build" [$OSX]
+				"name"			"TF2 Build" // Primary font
+				"name"			"TF2 Build" [!$WIN32]
 				"tall"			"12" // Size Small Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -750,9 +754,9 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Gobold"	// Primary font
-				"name"			"TF2 Build" [$OSX]
-				"tall"			"12" // Size Tiny Primary
+				"name"			"TF2 Build" // Primary font
+				"name"			"TF2 Build" [!$WIN32]
+				"tall"			"11" // Size Tiny Primary
 				"weight"		"0"
 				"additive"		"0"
 				"antialias" 	"1"
@@ -760,15 +764,15 @@ Scheme
 		}
 		
 
-
-
 		
+
+
 		"G_FontHuge_2"
 		{
 			"1"
 			{
-				"name"			"Lato" // Secondary font
-				"name"			"TF2 Secondary" [$OSX]
+				"name"			"TF2 Secondary" // Secondary font
+				"name"			"TF2 Secondary" [!$WIN32]
 				"tall"			"25" // Size Huge Secondary
 				"weight"		"0"
 				"additive"		"0"
@@ -780,8 +784,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Lato" // Secondary font
-				"name"			"TF2 Secondary" [$OSX]
+				"name"			"TF2 Secondary" // Secondary font
+				"name"			"TF2 Secondary" [!$WIN32]
 				"tall"			"19" // Size Big Secondary
 				"weight"		"0"
 				"additive"		"0"
@@ -793,8 +797,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Lato" // Secondary font
-				"name"			"TF2 Secondary" [$OSX]
+				"name"			"TF2 Secondary" // Secondary font
+				"name"			"TF2 Secondary" [!$WIN32]
 				"tall"			"16" // Size Medium Secondary
 				"weight"		"0"
 				"additive"		"0"
@@ -806,9 +810,9 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Lato" // Secondary font
-				"name"			"TF2 Secondary" [$OSX]
-				"tall"			"12" // Size Small Secondary
+				"name"			"TF2 Secondary" // Secondary font
+				"name"			"TF2 Secondary" [!$WIN32]
+				"tall"			"10" // Size Small Secondary
 				"weight"		"0"
 				"additive"		"0"
 				"antialias" 	"1"
@@ -819,8 +823,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Lato" // Secondary font
-				"name"			"TF2 Secondary" [$OSX]
+				"name"			"TF2 Secondary" // Secondary font
+				"name"			"TF2 Secondary" [!$WIN32]
 				"tall"			"10" // Size Tiny Secondary
 				"weight"		"0"
 				"additive"		"0"
@@ -833,13 +837,13 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Gobold" // Damage font
-				"name"			"TF2 Build" [$OSX]
-				"tall"			"20" // Damage size
+				"name"			"TF2" // Damage font
+				"name"			"TF2 Build" [!$WIN32]
+				"tall"			"8" // Damage size
 				"weight"		"0"
 				"additive"		"0"
 				"antialias"		"1"
-				"outline"		"1" // Damage outline
+				"outline"		"0" // Damage outline
 			}
 		}
 		
@@ -847,10 +851,10 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Gobold" // Crit damage font
-				"name"			"TF2 Build" [$OSX]
+				"name"			"TF2 Build" // Crit damage font
+				"name"			"TF2 Build" [!$WIN32]
 
-				"tall"			"22" // Crit damage size
+				"tall"			"16" // Crit damage size
 				"weight"		"0"
 				"additive"		"0"
 				"antialias"		"1"
@@ -884,8 +888,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Gobold"	// Primary font
-				"name"			"TF2 Build" [$OSX]
+				"name"			"TF2 Build" // Primary font
+				"name"			"TF2 Build" [!$WIN32]
 				"tall"			"50" // Size Huge Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -898,9 +902,9 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Gobold"	// Primary font
-				"name"			"TF2 Build" [$OSX]
-				"tall"			"32" // Size Big Primary
+				"name"			"TF2 Build" // Primary font
+				"name"			"TF2 Build" [!$WIN32]
+				"tall"			"43" // Size Big Primary
 				"weight"		"0"
 				"additive"		"0"
 				"antialias"		"1"
@@ -912,8 +916,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Gobold"	// Primary font
-				"name"			"TF2 Build" [$OSX]
+				"name"			"TF2 Build" // Primary font
+				"name"			"TF2 Build" [!$WIN32]
 				"tall"			"20" // Size Medium Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -926,8 +930,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Gobold"	// Primary font
-				"name"			"TF2 Build" [$OSX]
+				"name"			"TF2 Build" // Primary font
+				"name"			"TF2 Build" [!$WIN32]
 				"tall"			"12" // Size Small Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -940,13 +944,25 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Gobold"	// Primary font
-				"name"			"TF2 Build" [$OSX]
-				"tall"			"12" // Size Tiny Primary
+				"name"			"TF2 Build" // Primary font
+				"name"			"TF2 Build" [!$WIN32]
+				"tall"			"11" // Size Tiny Primary
 				"weight"		"0"
 				"additive"		"0"
 				"antialias" 	"1"
 				"blur"			"3"
+			}
+		}
+		
+		"G_Empty"
+		{
+			"1"
+			{
+				"name"			"Verdana"
+				"tall"			"1"
+				"weight"		"0"
+				"additive"		"0"
+				"antialias" 	"0"
 			}
 		}
 		
@@ -1086,6 +1102,7 @@ Scheme
 		}
 	
 		
+
 		"G_RespawnTimer"
 		{
 			"1"
@@ -1094,6 +1111,17 @@ Scheme
 				"tall"		"10"
 				"weight"	"400"
 				"outline"	"1"
+			}
+		}
+		
+		"G_FontKillfeed"
+		{
+			"1"
+			{
+				"name"		"TF2 Build" // Killfeed font
+				"tall"		"10" // Killfeed tall
+				"weight"	"400" // Killfeed weight
+				"antialias"	"1" // Killfeed antialias
 			}
 		}
 		
@@ -1269,7 +1297,7 @@ Scheme
 			"1"
 			{
 				"name"		"Trebuchet MS" [!$OSX]
-				"name"		"Helvetica" [$OSX]
+				"name"		"Helvetica" [!$WIN32]
 				"tall"		"18"
 				"weight"	"900"
 				"antialias" "1"
@@ -1911,8 +1939,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Lato" // Closed captions font
-				"name"		"TF2 Secondary" [$OSX]
+				"name"		"TF2 Build" // Closed captions font
+				"name"		"TF2 Secondary" [!$WIN32]
 				"tall"		"24" // Closed captions size
 
 
@@ -1926,8 +1954,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Lato" // Closed captions font
-				"name"		"TF2 Secondary" [$OSX]
+				"name"		"TF2 Build" // Closed captions font
+				"name"		"TF2 Secondary" [!$WIN32]
 				"tall"		"24" // Closed captions size
 
 
@@ -1942,8 +1970,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Lato" // Closed captions font
-				"name"		"TF2 Secondary" [$OSX]
+				"name"		"TF2 Build" // Closed captions font
+				"name"		"TF2 Secondary" [!$WIN32]
 				"tall"		"24" // Closed captions size
 
 
@@ -1957,8 +1985,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Lato" // Closed captions font
-				"name"		"TF2 Secondary" [$OSX]
+				"name"		"TF2 Build" // Closed captions font
+				"name"		"TF2 Secondary" [!$WIN32]
 				"tall"		"24" // Closed captions size
 
 
@@ -1973,8 +2001,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Lato" // Closed captions font
-				"name"		"TF2 Secondary" [$OSX]
+				"name"		"TF2 Build" // Closed captions font
+				"name"		"TF2 Secondary" [!$WIN32]
 				"tall"		"24" // Closed captions size
 
 
@@ -2062,7 +2090,7 @@ Scheme
 				"tall_lodef"	"48"
 				"tall_hidef"	"48"
 				"antialias"		"1" 
-				"custom"		"1" [$OSX]
+				"custom"		"1" [!$WIN32]
 				"weight"		"500"
 				"weight_lodef"	"800"
 				"weight_hidef"	"1000"
@@ -2077,7 +2105,7 @@ Scheme
 				"tall_lodef"	"48"
 				"tall_hidef"	"48"
 				"antialias"		"1"
-				"custom"		"1" [$OSX]
+				"custom"		"1" [!$WIN32]
 				"weight"		"500"
 				"weight_lodef"	"800"
 				"weight_hidef"	"1000"
@@ -2092,7 +2120,7 @@ Scheme
 				"tall_lodef"	"36"
 				"tall_hidef"	"36"
 				"antialias" "1"
-				"custom"		"1" [$OSX]
+				"custom"		"1" [!$WIN32]
 				"weight"	"500"
 			}
 		}
@@ -2102,11 +2130,11 @@ Scheme
 			{
 				"name"			"TF2 Professor"
 				"tall"			"14" [!$OSX]
-				"tall"			"15" [$OSX]
+				"tall"			"15" [!$WIN32]
 				"tall_lodef"	"32"
 				"tall_hidef"	"32"
 				"antialias"		"1"
-				"custom"		"1" [$OSX]
+				"custom"		"1" [!$WIN32]
 				"weight"		"500"
 			}
 		}
@@ -2491,7 +2519,7 @@ Scheme
 			{
 				"name"		"Verdana"
 				"tall"		"11"  [!$OSX]
-				"tall"		"9"  [$OSX]
+				"tall"		"9"  [!$WIN32]
 				"weight"	"800"
 				"additive"	"0"
 				"antialias" 	"1"

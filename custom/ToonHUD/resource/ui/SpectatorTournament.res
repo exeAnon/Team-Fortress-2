@@ -328,6 +328,7 @@
 			"tall_minmode"	"20"
 			"paintborder"	"0"
 			"font"			"G_FontMedium_2"
+			"textAlignment"	"center"
 		}
 	}
 	"BuyBackLabel"

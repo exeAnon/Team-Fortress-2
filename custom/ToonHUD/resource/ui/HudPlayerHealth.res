@@ -26,7 +26,7 @@
 		
 		// Shape of the crosshair (A-R, check Overrides/crosshairs.png)
 		
-			"labelText"			"A"													// FC2
+			"labelText"			""													// FC2
 			
 		
 		// Color of the crosshair (rgba value) [white by default]
@@ -68,7 +68,7 @@
 		
 		// Shape of the crosshair shadow (A-R, check Overrides/crosshairs.png)
 		
-			"labelText"			"A"													// FCS2
+			"labelText"			""													// FCS2
 			
 		
 		// Color of the crosshair shadow (rgba value) [black by default]
@@ -117,7 +117,7 @@
 		
 		// Shape of the second crosshair shadow (A-R, check Overrides/crosshairs.png)
 		
-			"labelText"			"A"														// FCS2
+			"labelText"			""														// FCS2
 			
 		
 		// Color of the second crosshair shadow (rgba value) [black by default]
@@ -160,12 +160,12 @@
 		
 		// Enable hitmarker (0/1) (If enabled, disable regular hitmarker from below)
 		
-			"visible"			"0"														// FH1
+			"visible"			"1"														// FH1
 		
 		
 		// Shape of the hitmarker (A-R, check Overrides/crosshairs.png)
 		
-			"labelText"			"A"														// FH2
+			"labelText"			"P"														// FH2
 		
 		
 		// Color of the hitmarker (rgba value) [red by default]
@@ -228,7 +228,7 @@
 		"tall"			"480"
 		"visible"		"1"
 		"enabled"		"1"
-		"HealthBonusPosAdj"			"25" // Grow size
+		"HealthBonusPosAdj"			"30" // Grow size
 		"HealthDeathWarning"		"0.49" // Warning percent
 		"HealthDeathWarningColor"	"G_Warning"
 	}

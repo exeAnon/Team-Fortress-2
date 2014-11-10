@@ -436,8 +436,8 @@
 			"labelText"		"#StatSummary_Label_PerformanceReport"
 			"textAlignment"		"west"
 			"xpos"			"c-285"
-			"ypos"			"140" [!$OSX]
-			"ypos"			"185" [$OSX]
+			"ypos"			"140" [$WIN32]
+			"ypos"			"185" [!$WIN32]
 			"wide"			"300"
 			"tall"			"20"
 			"autoResize"	"0"
@@ -1811,8 +1811,8 @@
 			"labelText"		"#StatSummary_Label_BestMoments"
 			"textAlignment"		"west"
 			"xpos"			"c+124"
-			"ypos"			"140" [!$OSX]
-			"ypos"			"140" [$OSX]
+			"ypos"			"140" [$WIN32]
+			"ypos"			"140" [!$WIN32]
 			"wide"			"300"
 			"tall"			"20"
 			"autoResize"	"0"
