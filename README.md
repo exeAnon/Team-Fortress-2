@@ -1,3 +1,4 @@
-# TF2 CFGs & Mods
+#Team Fortress 2
 
-Mostly a backup of my configs, but people have asked for my configs as well, so here they are.
+Mostly a backup of my configs, but people have asked for them in the past.
+Also includes custom installs / population files for MVM.
