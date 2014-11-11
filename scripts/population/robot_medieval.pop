@@ -1,0 +1,304 @@
+WaveSchedule
+{
+	Templates
+	{
+		//Scout
+		
+		T_TFBot_Milkman //Throw milk at people (not actually working, any idea to fix it ?)
+		{
+			Name "Milkman"
+			Health 125
+			Class Scout
+			Skill Expert
+			MaxVisionRange 400
+			Item "The Milkman"
+			Item "Mad Milk"
+			Item "The Holy Mackerel"
+		}
+		
+		//Soldier
+		
+		T_TFBot_Soldier_Samurai //Concheror + half-zatoichi
+		{	
+			Name "Concheror Samurai"
+			Health 200
+			Class Soldier
+			ClassIcon soldier_conch
+			Skill Expert
+			MaxVisionRange 400
+			Attributes SpawnWithFullCharge
+			Item "The Concheror"
+			Item "The Half-Zatoichi"
+			Item "Soldier Samurai Hat"
+			CharacterAttributes
+			{
+				"increase buff duration" 9.0
+			}
+		}
+		
+		T_TFBot_Soldier_Samurai_Giant //Giant version of the bot above, but not slowed down. For balance reasons, he can't pick intel
+		{	
+			Name "Giant Concheror Samurai"
+			Health 1200
+			Class Soldier
+			ClassIcon soldier_conch
+			Skill Expert
+			MaxVisionRange 400
+			Attributes SpawnWithFullCharge
+			Item "The Concheror"
+			Item "The Half-Zatoichi"
+			Item "Soldier Samurai Hat"
+			Attributes MiniBoss
+			CharacterAttributes
+			{
+				"damage force reduction" 0.4
+				"airblast vulnerability multiplier" 0.4
+				"override footstep sound set" 3
+				"increase buff duration" 9.0
+				"cannot pick up intelligence" 1
+			}
+		}
+		
+		T_TFBot_Soldier_Support //Buff banner + Disciplinary action
+		{
+			Name "Support Soldier"
+			Health 200
+			Class Soldier
+			ClassIcon soldier_buff
+			Attributes SpawnWithFullCharge
+			Skill Expert
+			MaxVisionRange 400
+			Item "The Buff Banner"
+			Item "The Disciplinary Action"
+			Item "Armored Authority"
+			CharacterAttributes 
+			{
+				"increase buff duration"	9.0
+			}
+		}
+		
+		T_TFBot_Shako //Demopan's minion
+		{
+			Name "Shako Soldier"
+			Health 300
+			Class Soldier
+			Skill Expert
+			MaxVisionRange 400
+			Attributes AlwaysCrit
+			BehaviorModifiers Mobber
+			Item "Frying Pan"
+			Item "Stout Shako"
+		}
+		
+		T_TFBot_Giant_Shako //Giant version of the bot above
+		{
+			Name "Giant Shako Soldier"
+			Health 1200
+			Class Soldier
+			ClassIcon soldier_giant
+			Skill Expert
+			MaxVisionRange 400
+			Attributes AlwaysCrit
+			BehaviorModifiers Mobber
+			Item "Frying Pan"
+			Item "Stout Shako"
+			Attributes MiniBoss
+			CharacterAttributes
+			{
+				"damage force reduction" 0.4
+				"airblast vulnerability multiplier" 0.4
+				"override footstep sound set" 3
+			}
+		}
+		
+		//Pyro
+		//None, hue
+		
+		//Demo
+		
+		T_TFBot_Demo_Caliph //The same that Valve made, but with a different name
+		{
+			Name "DemoCaliph"
+			Health 175
+			Class Demoman
+			ClassIcon demoknight
+			Skill Expert
+			MaxVisionRange 400
+			Item "Ali Baba's Wee Booties"
+			Item "The Splendid Screen"
+			Item "The Persian Persuader"
+			Item "Sultan's Ceremonial"
+			CharacterAttributes
+			{
+				"critboost on kill" 3
+			}
+		}
+		
+		T_TFBot_Demo_Samurai //Some kind of easier version of the Demoknight
+		{
+			Name "Samurai Demo"
+			Health 175
+			Class Demoman
+			ClassIcon demoknight_samurai
+			Skill Expert
+			MaxVisionRange 400
+			Item "The Half-Zatoichi"
+			Item "Demo Kabuto"
+			CharacterAttributes
+			{
+				"critboost on kill" 3
+			}
+		}
+		
+		T_TFBot_Demo_Demokaze //Will hunt players, and die due to his own Caber
+		{
+			Name "Demokaze"
+			Attributes IgnoreFlag
+			Health 60
+			Class Demoman
+			Skill Expert
+			MaxVisionRange 400
+			ItemAttributes
+			{
+				ItemName "The Splendid Screen"
+				"Attack not cancel charge" 1
+				"full charge turn control" 50
+				"charge time increased" 1.0
+			}
+			Item "The Ullapool Caber"
+			Item "Humanitarian's Hachimaki"
+		}
+		
+		T_TFBot_Demo_Slayer //A big Demoknight
+		{
+			Name "Slayer Demo"
+			Health 800
+			Class Demoman
+			ClassIcon demoknight
+			Skill Expert
+			MaxVisionRange 400
+			Item "The Horseless Headless Horseman's Headtaker"
+			Item "Spine-Chilling Skull"
+			Item "The Chargin' Targe"
+			Scale 1.2
+			CharacterAttributes
+			{
+				"critboost on kill" 3
+			}
+		}
+		
+		T_TFBot_Demopan //BOSS
+		{
+			Name "Demopan"
+			Health 20000
+			Class Demoman
+			ClassIcon demo_bomber
+			Skill Expert
+			MaxVisionRange 400
+			Attributes AlwaysCrit
+			Item "Ali Baba's Wee Booties"
+			Item "The Chargin' Targe"
+			Item "Frying Pan"
+			Item "Treasure Hat 2"
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			Scale 1.9
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage force reduction" 0.5
+				"airblast vulnerability multiplier" 0.5
+				"override footstep sound set" 4
+			}
+		}
+		
+		//Heavy
+		
+		T_TFBot_Brute_Heavy //Tall, more health, Eviction notice
+		{
+			Name "Brute Heavy"
+			ClassIcon heavy_chief
+			Health 600
+			Class Heavy
+			Skill Expert
+			MaxVisionRange 400
+			Item "War Head"
+			Item "The Eviction Notice"
+			Scale 1.2
+		}
+		
+		T_TFBot_Heavy_Wrestler //A bigger version of the Heavyweight champ
+		{
+			Name "Wrestler Heavy"
+			Health 900
+			Class Heavy
+			ClassIcon heavy_steelfist
+			Skill Expert
+			Scale 1.5
+			MaxVisionRange 400
+			Item "Apoco-Fists"
+			Item "Cold War Luchador"
+			CharacterAttributes
+			{
+				"critboost on kill" 3
+			}
+		}
+		
+		T_TFBot_Dragonborn //BOSS, present in the normal mission
+		{
+			Name "Dragonborn"
+			Health 10000
+			Class Heavy
+			Skill Expert
+			MaxVisionRange 400
+			Attributes AlwaysCrit
+			Item "Warrior's Spirit"
+			Item "Dragonborn Helmet"
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			Scale 1.9
+			CharacterAttributes
+			{
+				"move speed bonus"	0.5
+				"damage bonus"	1.5
+				"damage force reduction" 0.3
+				"airblast vulnerability multiplier" 0.3
+				"override footstep sound set" 2
+			}
+		}
+		
+		//Engie
+		//Don't use those
+		
+		//Medic
+		
+		T_TFBot_Crusuader_Medic //Won't actually use his crossbow (you can blame Valve, but they certainly didn't planned that) and stay behind a pocket (Giant, big units)
+		{
+			Name "Crusuader Medic"
+			Health 150
+			Class Medic
+			Skill Expert
+			MaxVisionRange 400
+			Item "The Crusader's Crossbow"
+			Item "The Amputator"
+			Item "Berliner's Bucket Helm"
+		}
+		
+		//Snipers
+		
+		T_TFBot_Sniper_Desert //Weakest unit, perfect for support
+		{
+			Name "Marauder Sniper"
+			Health 125
+			Class Sniper
+			Skill Expert
+			MaxVisionRange 400
+			Attributes SpawnWithFullCharge
+			Item "The Shahanshah"
+			Item "Desert Marauder"
+		}
+		
+		//Spies
+		//You can make any spies you want
+	}
+}
