@@ -3532,14 +3532,14 @@
 		"zpos"			"2"
 		"wide"			"57"
 		"tall"			"15"
-		"visible"		"0" // 1 BM1
+		"visible"		"1" // 1 BM1
 		"enabled"		"1"
 		"textAlignment"	"center"
-		"labelText"		"Bookmark 1" // 2 BM1
+		"labelText"		"Rocket Jump" // 2 BM1
 		"font"			"DefaultVerySmall"
 		"defaultBgColor_override" "0 0 0 150"
 		"defaultFgColor_override" "G_White"
-		"Command"		"" // 3 BM1
+		"Command"		"engine exec map_base; map pl_upward; exec mode_comp; exec mode_jump" // 3 BM1
 	}
 	
 	Bookmark_2 {

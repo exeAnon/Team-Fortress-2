@@ -458,14 +458,14 @@
 		"wide"	 "628"
 		"tall"	 "468"
 
-		"MaxDeathNotices" "4" // 1 KF
+		"MaxDeathNotices" "12" // 1 KF
 		"IconScale"		"0.35"
 		"LineHeight"	"16" // 3 KF
 		"LineSpacing"	"4" // 4 KF
 		"CornerRadius"	"4" // 2 KF
 		"RightJustify"	"1"	// If 1, draw notices from the right
 		
-		"TextFont"		"G_FontKillfeed" // 5 KF
+		"TextFont"		"Default" // 5 KF
 		
 		"TeamBlue"		"G_KillfeedBlue"
 		"TeamRed"		"G_KillfeedRed"

@@ -160,7 +160,7 @@
 		
 		// Enable hitmarker (0/1) (If enabled, disable regular hitmarker from below)
 		
-			"visible"			"1"														// FH1
+			"visible"			"0"														// FH1
 		
 		
 		// Shape of the hitmarker (A-R, check Overrides/crosshairs.png)
@@ -228,7 +228,7 @@
 		"tall"			"480"
 		"visible"		"1"
 		"enabled"		"1"
-		"HealthBonusPosAdj"			"30" // Grow size
+		"HealthBonusPosAdj"			"25" // Grow size
 		"HealthDeathWarning"		"0.49" // Warning percent
 		"HealthDeathWarningColor"	"G_Warning"
 	}

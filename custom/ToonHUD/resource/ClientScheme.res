@@ -38,7 +38,7 @@ Scheme
 		"G_LightGrey"			"180 180 180 255"
 		"G_HealthBarBg"			"0 0 0 220"
 		"G_CurrencyBad"			"255 60 60 255"
-		"G_TransparentMenuBG"	"46 43 42 252" // Transparent menu color
+		"G_TransparentMenuBG"	"46 43 42 220" // Transparent menu color
 		"G_PanelBg"				"46 43 42 220" // Panel color
 		"G_Shine"				"255 255 255 0" // Shine color
 		"G_Warning"				"231 76 60 255" // Warning color
@@ -839,7 +839,7 @@ Scheme
 			{
 				"name"			"TF2" // Damage font
 				"name"			"TF2 Build" [!$WIN32]
-				"tall"			"8" // Damage size
+				"tall"			"12" // Damage size
 				"weight"		"0"
 				"additive"		"0"
 				"antialias"		"1"
@@ -1118,9 +1118,9 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build" // Killfeed font
-				"tall"		"10" // Killfeed tall
-				"weight"	"400" // Killfeed weight
+				"name"		"Verdana" // Killfeed font
+				"tall"		"20" // Killfeed tall
+				"weight"	"900" // Killfeed weight
 				"antialias"	"1" // Killfeed antialias
 			}
 		}
@@ -1947,7 +1947,7 @@ Scheme
 				"weight"	"500"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"antialias"	"1"
-				"outline"	"0" // Closed captions outline
+				"outline"	"1" // Closed captions outline
 			}
 		}
 		"CloseCaption_Italic"
@@ -1963,7 +1963,7 @@ Scheme
 				"italic"	"1"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"antialias"	"1"
-				"outline"	"0" // Closed captions outline
+				"outline"	"1" // Closed captions outline
 			}
 		}
 		"CloseCaption_Bold"
@@ -1978,7 +1978,7 @@ Scheme
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"antialias"	"1"
-				"outline"	"0" // Closed captions outline
+				"outline"	"1" // Closed captions outline
 			}
 		}
 		"CloseCaption_BoldItalic"
@@ -1994,7 +1994,7 @@ Scheme
 				"italic"	"1"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"antialias"	"1"
-				"outline"	"0" // Closed captions outline
+				"outline"	"1" // Closed captions outline
 			}
 		}
 		"CloseCaption_Small"
@@ -2009,7 +2009,7 @@ Scheme
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"antialias"	"1"
-				"outline"	"0" // Closed captions outline
+				"outline"	"1" // Closed captions outline
 			}
 		}
 		// this is the symbol font
