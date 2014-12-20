@@ -165,7 +165,7 @@
 		
 		// Shape of the hitmarker (A-R, check Overrides/crosshairs.png)
 		
-			"labelText"			"P"														// FH2
+			"labelText"			""														// FH2
 		
 		
 		// Color of the hitmarker (rgba value) [red by default]
@@ -228,7 +228,7 @@
 		"tall"			"480"
 		"visible"		"1"
 		"enabled"		"1"
-		"HealthBonusPosAdj"			"25" // Grow size
+		"HealthBonusPosAdj"			"30" // Grow size
 		"HealthDeathWarning"		"0.49" // Warning percent
 		"HealthDeathWarningColor"	"G_Warning"
 	}

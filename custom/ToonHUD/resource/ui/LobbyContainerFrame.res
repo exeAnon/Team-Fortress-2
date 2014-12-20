@@ -159,6 +159,29 @@
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}
+	
+	"BackButtonQKey"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"BackButtonQKey"
+		"xpos"			"-9999"
+		"ypos"			"-9999"
+		"zpos"			"-9999"
+		"wide"			"0"
+		"tall"			"0"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"&Q"
+		"font"			"HudFontSmallBold"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"default"		"0"
+		"Command"		"back"
+	}
 
 	"WaitingForLeaderLabel"
 	{

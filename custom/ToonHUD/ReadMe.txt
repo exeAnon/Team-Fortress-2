@@ -1,7 +1,7 @@
 	
 	ToonHUD					Created by Griever (http://steamcommunity.com/id/kaasa/)
 	---------------------------------------------------------------------------------
-	HUD's Official Site: http://toonhud.tf/
+	HUD's Official Site: http://toonhud.com/
 	---------------------------------------------------------------------------------
 	
 	How to install: 
@@ -14,13 +14,8 @@
 				C:\Program Files (x86)\Steam\SteamApps\common\Team Fortress 2\tf\custom 
 			
 				(remove "(x86)" if you are using 32-bit Windows)
-			
-			Mac OSX:
-			
-				~/Library/Application Support/Steam/SteamApps/common/Team Fortress 2/tf/custom
-			
-			
-			
+
+
 			If your screen aspect ratio is 4:3 or 16:10:
 			
 			- Go to ToonHUD/Overrides/4;3 aspect ratio (or 16;10 aspect ratio) folder

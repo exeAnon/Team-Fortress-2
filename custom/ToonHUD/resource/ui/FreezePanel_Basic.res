@@ -1,5 +1,12 @@
 "Resource/UI/FreezePanel_Basic.res"
 {
+	"FreezePanel"
+	{
+		"ControlName"	"CTFFreezePanel"
+		"fieldName"		"FreezePanel"
+		"screenshot_move_panel_to_corner"	"0"
+	}
+	
 	"FreezePanelBase"	[$X360]
 	{
 		"ControlName"	"EditablePanel"
@@ -206,7 +213,7 @@
 		"xpos"			"r200"
 		"ypos"			"150"
 		"wide"			"310"		
-		"tall"			"300"		
+		"tall"			"400"
 		"visible"		"1"
 
 		"FreezePanelBG"

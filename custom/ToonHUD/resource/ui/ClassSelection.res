@@ -2069,5 +2069,26 @@
 		"image"				"../hud/leaderboard_class_spy"
 	}
 	
-	
+	"EditLoadoutEKey"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"EditLoadoutEKey"
+		"xpos"			"-9999"
+		"ypos"			"-9999"
+		"zpos"			"-9999"
+		"wide"			"0"
+		"tall"			"0"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"&E"
+		"font"			"HudFontSmallBold"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"default"		"0"
+		"Command"		"openloadout"
+	}
 }

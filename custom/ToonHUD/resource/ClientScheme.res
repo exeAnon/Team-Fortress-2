@@ -38,12 +38,12 @@ Scheme
 		"G_LightGrey"			"180 180 180 255"
 		"G_HealthBarBg"			"0 0 0 220"
 		"G_CurrencyBad"			"255 60 60 255"
-		"G_TransparentMenuBG"	"46 43 42 220" // Transparent menu color
-		"G_PanelBg"				"46 43 42 220" // Panel color
+		"G_TransparentMenuBG"	"0 0 0 220" // Transparent menu color
+		"G_PanelBg"				"0 0 0 220" // Panel color
 		"G_Shine"				"255 255 255 0" // Shine color
-		"G_Warning"				"231 76 60 255" // Warning color
+		"G_Warning"				"255 0 0 255" // Warning color
 		"G_HealthValue"			"255 255 255 255" // Health value color
-		"G_Overheal"			"85 170 255 255" // Overhealed health value color
+		"G_Overheal"			"0 128 255 255" // Overhealed health value color
 		"G_LowHealthValue"		"255 255 255 255" // Low health value color
 		"G_AmmoClipValue"		"255 255 255 255" // Ammo in clip value color
 		"G_AmmoReserveValue"	"255 255 255 255" // Ammo in reserve value color
@@ -56,14 +56,14 @@ Scheme
 		"G_CrosshairColor"				"255 255 255 255" // Crosshair color
 		"G_CrosshairShadowColor"		"0 0 0 255"	// Crosshair shadow color
 		"G_CrosshairColorLowHealth"		"255 255 255 255" // Crosshair color when low health
-		"G_HitmarkerColor"				"255 255 255 150" // Hitmarker color
+		"G_HitmarkerColor"				"255 0 0 150" // Hitmarker color
 		"G_StickyColor"					"255 255 255 255" // Stickybomb color
 		"G_StickyIconColor"				"255 255 255 255" // Stickybomb icon color
 		"G_CustomTargetID" 				"0 0 0 100" // Custom target id bg color
-		"G_Killfeed_Base"		"46 43 42 0" // Killfeed Base color
+		"G_Killfeed_Base"		"46 43 42 230" // Killfeed Base color
 		"G_Killfeed_Local"		"245 229 196 210" // Killfeed Local color
-		"G_ToonHUD"				"231 76 60 255" // ToonHUD color
-		"G_CenteredMetalBg"		"60 60 60 120" // Centered metal background color
+		"G_ToonHUD"				"151 51 51 255" // ToonHUD color
+		"G_CenteredMetalBg"		"0 0 0 120" // Centered metal background color
 		"G_CenteredUberchargeBg" "0 0 0 100" // Centered ubercharge meter background color
 		"G_BrownBg"				"46 43 42 220"
 		"G_DestroyBg"			"120 0 0 150"
@@ -83,6 +83,9 @@ Scheme
 		"G_KillfeedRed"		"180 92 77 255" // Killfeed red text
 		"G_KillfeedIcon"	"255 255 255 255" // Killfeed icon color
 		"G_CustomHealthValue"	"120 120 120 255"
+		"G_MainMenuOverlay"	"0 128 255 0" // Main Menu overlay color
+		"G_MainMenuButton"	"41 37 38 190" // Main Menu button color
+		"G_MainMenuButtonHover"	"41 37 38 255" // Main Menu hovered button color
 		
 	
 		// base colors
@@ -837,13 +840,13 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2" // Damage font
+				"name"			"TF2 Secondary" // Damage font
 				"name"			"TF2 Build" [!$WIN32]
-				"tall"			"12" // Damage size
+				"tall"			"20" // Damage size
 				"weight"		"0"
 				"additive"		"0"
 				"antialias"		"1"
-				"outline"		"0" // Damage outline
+				"outline"		"1" // Damage outline
 			}
 		}
 		
@@ -851,10 +854,10 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Build" // Crit damage font
+				"name"			"TF2 Secondary" // Crit damage font
 				"name"			"TF2 Build" [!$WIN32]
 
-				"tall"			"16" // Crit damage size
+				"tall"			"22" // Crit damage size
 				"weight"		"0"
 				"additive"		"0"
 				"antialias"		"1"
@@ -1939,7 +1942,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build" // Closed captions font
+				"name"		"TF2 Secondary" // Closed captions font
 				"name"		"TF2 Secondary" [!$WIN32]
 				"tall"		"24" // Closed captions size
 
@@ -1947,14 +1950,14 @@ Scheme
 				"weight"	"500"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"antialias"	"1"
-				"outline"	"1" // Closed captions outline
+				"outline"	"0" // Closed captions outline
 			}
 		}
 		"CloseCaption_Italic"
 		{
 			"1"
 			{
-				"name"		"TF2 Build" // Closed captions font
+				"name"		"TF2 Secondary" // Closed captions font
 				"name"		"TF2 Secondary" [!$WIN32]
 				"tall"		"24" // Closed captions size
 
@@ -1963,14 +1966,14 @@ Scheme
 				"italic"	"1"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"antialias"	"1"
-				"outline"	"1" // Closed captions outline
+				"outline"	"0" // Closed captions outline
 			}
 		}
 		"CloseCaption_Bold"
 		{
 			"1"
 			{
-				"name"		"TF2 Build" // Closed captions font
+				"name"		"TF2 Secondary" // Closed captions font
 				"name"		"TF2 Secondary" [!$WIN32]
 				"tall"		"24" // Closed captions size
 
@@ -1978,14 +1981,14 @@ Scheme
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"antialias"	"1"
-				"outline"	"1" // Closed captions outline
+				"outline"	"0" // Closed captions outline
 			}
 		}
 		"CloseCaption_BoldItalic"
 		{
 			"1"
 			{
-				"name"		"TF2 Build" // Closed captions font
+				"name"		"TF2 Secondary" // Closed captions font
 				"name"		"TF2 Secondary" [!$WIN32]
 				"tall"		"24" // Closed captions size
 
@@ -1994,14 +1997,14 @@ Scheme
 				"italic"	"1"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"antialias"	"1"
-				"outline"	"1" // Closed captions outline
+				"outline"	"0" // Closed captions outline
 			}
 		}
 		"CloseCaption_Small"
 		{
 			"1"
 			{
-				"name"		"TF2 Build" // Closed captions font
+				"name"		"TF2 Secondary" // Closed captions font
 				"name"		"TF2 Secondary" [!$WIN32]
 				"tall"		"24" // Closed captions size
 
@@ -2009,7 +2012,7 @@ Scheme
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
 				"antialias"	"1"
-				"outline"	"1" // Closed captions outline
+				"outline"	"0" // Closed captions outline
 			}
 		}
 		// this is the symbol font

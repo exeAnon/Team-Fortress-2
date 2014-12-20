@@ -10,7 +10,7 @@ Scheme
 	
 		// ToonHUD
 		
-		"G_ToonHUD"			"231 76 60 255" // ToonHUD color
+		"G_ToonHUD"			"151 51 51 255" // ToonHUD color
 		"G_Grey"			"42 39 37 255"
 		"G_GreyTransparent"	"42 39 37 240"
 		"G_DarkGrey"		"32 29 28 255"

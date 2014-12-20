@@ -1,7 +1,5 @@
 "Resource/HudLayout.res"
 {
-
-	
 	HudPlayerStatus
 	{
 		"fieldName" "HudPlayerStatus"
@@ -186,10 +184,10 @@
 		"fieldName"				"CHudAccountPanel"
 		"wide"					"200"
 		"tall"					"60"
-		"xpos"					"c-20" // 1 CM
-		"xpos_minmode"			"c-20" // 2 CM
-		"ypos"					"c10" // 3 CM
-		"ypos_minmode"			"c10" // 4 CM
+		"xpos"					"c+140" // 1 CM
+		"xpos_minmode"			"c+120" // 2 CM
+		"ypos"					"r32" // 3 CM
+		"ypos_minmode"			"c+108" // 4 CM
 		"visible" 				"1"
 		"enabled" 				"1"
 		"paintbackground"		"1"
@@ -247,7 +245,7 @@
 		"tall_minmode"	 	"28"
 		"priority"	"40"
 		"priority_lodef"	"5"
-		
+
 		if_vr
 		{
 			"ypos"		"370"
@@ -453,12 +451,12 @@
 		"fieldName" "HudDeathNotice"
 		"visible" "1"
 		"enabled" "1"
-		"xpos"	 "r640"
-		"ypos"	 "12"
+		"xpos"	 "r640" // 6 KF
+		"ypos"	 "12" // 7 KF
 		"wide"	 "628"
 		"tall"	 "468"
 
-		"MaxDeathNotices" "12" // 1 KF
+		"MaxDeathNotices" "8" // 1 KF
 		"IconScale"		"0.35"
 		"LineHeight"	"16" // 3 KF
 		"LineSpacing"	"4" // 4 KF
@@ -836,21 +834,6 @@
 		"ypos_minmode"			"r149"
 		"wide"					"198"
 		"tall"					"149"
-		"zpos"					"3000"
-	}
-	
-	WinPanel_for_big_winpanels
-	{
-		"fieldName"				"WinPanel"
-		"visible"				"1"
-		"enabled"				"1"
-		"xpos"					"0"
-		"xpos_minmode"			"c"
-		"ypos"					"r106"
-		"ypos_minmode"			"r132"
-		"wide"					"f0"
-		"wide_minmode"			"320"
-		"tall"					"150"
 		"zpos"					"3000"
 	}
 
@@ -1354,10 +1337,10 @@
 		"tall"			"60"
 	}
 	
-	"CTFKillStreakNotice"
+	"CTFStreakNotice"
 	{
-		"fieldName"		"CTFKillStreakNotice"
-		"xpos"			"0"			
+		"fieldName"		"CTFStreakNotice"
+		"xpos"			"0"
 		"ypos"			"0"
 		"wide"			"640"
 		"tall"			"480"
@@ -1365,6 +1348,18 @@
 		"enabled"		"1"
 		"bgcolor_override"	"0 0 0 0"
 		"PaintBackgroundType"	"0" // rounded corners
+	}
+
+	CTFFlagCalloutPanel
+	{
+		"fieldName"		"CTFFlagCalloutPanel"
+		"visible" 		"0"
+		"enabled" 		"1"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"	 		"40"
+		"tall"	 		"40"
+		"priority"		"40"
 	}
 	
 	"HudMenuTauntSelection"
@@ -1383,7 +1378,7 @@
 		"tall_minmode"			"99"
 		"PaintBackgroundType"	"0"
 	}
-	
+
 	HudMiniGame
 	{
 		"fieldName" "HudMiniGame"

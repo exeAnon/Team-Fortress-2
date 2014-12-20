@@ -42,7 +42,7 @@
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
-			"font"			"Default"
+			"font"			"DefaultSmall"
 			"wrap"			"1"
 			"fgcolor_override"	"255 255 255 255"
 		}
@@ -115,7 +115,7 @@
 			"textAlignment"	"West"
 			"dulltext"		"0"
 			"brighttext"	"0"
-			"font"			"Default"
+			"font"			"DefaultSmall"
 			"fgcolor_override"	"255 255 255 255"
 			"wrap"			"1"
 			"noshortcutsyntax" "1"
@@ -442,7 +442,7 @@
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
-			"font"			"Default"
+			"font"			"DefaultSmall"
 			"wrap"			"1"
 			"fgcolor_override"	"200 30 30 255"
 		}
@@ -472,7 +472,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"VoteFailed"
-		"xpos"			"10"
+		"xpos"			"5"
 		"ypos"			"r315"
 		"wide"			"100"
 		"tall"			"67"
@@ -510,7 +510,7 @@
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
-			"font"			"Default"
+			"font"			"DefaultSmall"
 			"wrap"			"1"
 			"fgcolor_override"	"200 30 30 255"
 		}
@@ -697,7 +697,7 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"Command"		"CallVote"
-			"Default"		"0"
+			"DefaultSmall"		"0"
 			"font"			"HudFontSmallBold"
 		}
 		"Button1"
@@ -718,7 +718,7 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"Command"		"Close"
-			"Default"		"0"
+			"DefaultSmall"		"0"
 			"font"			"HudFontSmallBold"
 		}
 	}

@@ -77,7 +77,7 @@
 		"xpos"			"c+140"
 		"xpos_minmode"	"c+120"
 		"ypos"			"r33"
-		"ypos_minmode"	"c+114"
+		"ypos_minmode"	"c+124"
 		"zpos"			"1"
 		"wide"			"180"
 		"tall"			"126"
