@@ -67,6 +67,16 @@
 				"font"				"HudFontSmallestBold"
 				"sound_depressed"	"UI/buttonclick.wav"
 				"sound_released"	"UI/buttonclickrelease.wav"
+				
+				"defaultBgColor_override" "0 0 0 100"
+				"armedBgColor_override" "0 0 0 200"
+				"depressedBgColor_override" "G_ToonHUD"
+				"presetDepressedColorBg_override" "G_ToonHUD"
+				
+				"defaultFgColor_override" "255 0 0 255"
+				"armedFgColor_override" "0 255 0 255"
+				"depressedFgColor_override" "0 0 255 255"
+				"selectedFgColor_override" "255 255 0 255"
 			}
 
 			"New"
@@ -461,18 +471,19 @@
 		"font"			"HudFontSmallestBold"
 		"labelText"		"%backpackpage%"
 		"textAlignment"	"center"
-		"xpos"			"c-20"
-		"ypos"			"323"
+		"xpos"			"-9999"
+		"ypos"			"-9999"
 		"zpos"			"1"
 		"wide"			"40"
 		"tall"			"14"
 		"paintbackgroundtype"	"2"
 		"autoResize"	"1"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"fgcolor_override" "G_White"
 		"bgcolor_override"	"26 25 24 255"
+		"Alpha"			"0"
 	}
 	
 	"NextPageButton"
@@ -557,20 +568,18 @@
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"CancelApplyToolButton"
-		"xpos"			"c-288"
-		"ypos"			"366"
-		"ypos"			"356" [$OSX]
+		"xpos"			"c-60"
+		"ypos"			"323"
 		"zpos"			"20"
-		"wide"			"100"
-		"tall"			"20"
-		"tall"			"15" [$OSX]
+		"wide"			"120"
+		"tall"			"14"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"labelText"		"#Cancel"
-		"font"			"HudFontSmallBold"
+		"font"			"HudFontSmallestBold"
 		"textAlignment"	"center"
 		"textinsetx"	"50"
 		"dulltext"		"0"
@@ -578,6 +587,9 @@
 		"Command"		"canceltool"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
+		"fgcolor_override" "G_White"
+		"defaultBgColor_override" "177 39 39 255"
+		"armedBgColor_override" "210 46 46 255"
 	}
 
 	"ShowExplanationsButton"

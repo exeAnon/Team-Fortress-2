@@ -163,12 +163,12 @@
 		"font"			"G_Slash"
 		"labelText"		"/"
 		"textAlignment"	"west"
-		"xpos"			"290" [$WIN32]
-		"xpos"			"289" [!$WIN32]
+		"xpos"			"290" [$WINDOWS]
+		"xpos"			"289" [!$WINDOWS]
 		"ypos"			"43"
 		"wide"			"20"
-		"tall"			"20" [$WIN32]
-		"tall"			"21" [!$WIN32]
+		"tall"			"20" [$WINDOWS]
+		"tall"			"21" [!$WINDOWS]
 		"zpos"			"3"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -178,8 +178,8 @@
 		
 		if_mvm
 		{
-			"xpos"		"510" [$WIN32]
-			"xpos"		"509" [!$WIN32]
+			"xpos"		"510" [$WINDOWS]
+			"xpos"		"509" [!$WINDOWS]
 			"ypos"		"83"
 			"fgcolor"	"G_TeamRed"
 		}

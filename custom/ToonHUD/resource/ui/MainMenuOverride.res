@@ -3606,7 +3606,7 @@
 		"zpos"			"-60"
 		"wide"			"320"
 		"tall"			"f0"
-		"visible"		"1"
+		"visible"		"0"
 		"PaintBackgroundType"	"0"
 
 			
@@ -4056,14 +4056,14 @@
 		"zpos"			"2"
 		"wide"			"57"
 		"tall"			"15"
-		"visible"		"0" // 1 BM1
+		"visible"		"1" // 1 BM1
 		"enabled"		"1"
 		"textAlignment"	"center"
-		"labelText"		"Bookmark 1" // 2 BM1
+		"labelText"		"Record Demo" // 2 BM1
 		"font"			"DefaultVerySmall"
 		"defaultBgColor_override" "0 0 0 150"
 		"defaultFgColor_override" "G_White"
-		"Command"		"" // 3 BM1
+		"Command"		"engine prec_record" // 3 BM1
 	}
 	
 	Bookmark_2 {
@@ -4074,14 +4074,14 @@
 		"zpos"			"2"
 		"wide"			"57"
 		"tall"			"15"
-		"visible"		"0" // 1 BM2
+		"visible"		"1" // 1 BM2
 		"enabled"		"1"
 		"textAlignment"	"center"
-		"labelText"		"Bookmark 2" // 2 BM2
+		"labelText"		"Stop Recording" // 2 BM2
 		"font"			"DefaultVerySmall"
 		"defaultBgColor_override" "0 0 0 150"
 		"defaultFgColor_override" "G_White"
-		"Command"		"" // 3 BM2
+		"Command"		"engine stop" // 3 BM2
 	}
 	
 	Bookmark_3 {
@@ -4092,14 +4092,14 @@
 		"zpos"			"2"
 		"wide"			"57"
 		"tall"			"15"
-		"visible"		"0" // 1 BM3
+		"visible"		"1" // 1 BM3
 		"enabled"		"1"
 		"textAlignment"	"center"
-		"labelText"		"Bookmark 3" // 2 BM3
+		"labelText"		"Delete Demo" // 2 BM3
 		"font"			"DefaultVerySmall"
 		"defaultBgColor_override" "0 0 0 150"
 		"defaultFgColor_override" "G_White"
-		"Command"		"" // 3 BM3
+		"Command"		"engine prec_delete_demo" // 3 BM3
 	}
 	
 	Bookmark_4 {
@@ -4110,14 +4110,14 @@
 		"zpos"			"2"
 		"wide"			"57"
 		"tall"			"15"
-		"visible"		"0" // 1 BM4
+		"visible"		"1" // 1 BM4
 		"enabled"		"1"
 		"textAlignment"	"center"
-		"labelText"		"Bookmark 4" // 2 BM4
+		"labelText"		"Demo UI" // 2 BM4
 		"font"			"DefaultVerySmall"
 		"defaultBgColor_override" "0 0 0 150"
 		"defaultFgColor_override" "G_White"
-		"Command"		"" // 3 BM4
+		"Command"		"engine demoui" // 3 BM4
 	}
 	
 	Console {
@@ -4201,7 +4201,7 @@
 		"textAlignment"	"center"
 		"font"			"DefaultVerySmall"
 		
-		"labelText"		"ToonHUD 5.2"
+		"labelText"		"ToonHUD 5.41"
 	}
 }
 

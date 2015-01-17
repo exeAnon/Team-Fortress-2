@@ -184,10 +184,10 @@
 		"fieldName"				"CHudAccountPanel"
 		"wide"					"200"
 		"tall"					"60"
-		"xpos"					"c+140" // 1 CM
-		"xpos_minmode"			"c+120" // 2 CM
-		"ypos"					"r32" // 3 CM
-		"ypos_minmode"			"c+108" // 4 CM
+		"xpos"					"c-20" // 1 CM
+		"xpos_minmode"			"c-20" // 2 CM
+		"ypos"					"c10" // 3 CM
+		"ypos_minmode"			"c10" // 4 CM
 		"visible" 				"1"
 		"enabled" 				"1"
 		"paintbackground"		"1"
@@ -302,8 +302,8 @@
 		"visible"	"1"
 		"enabled"	"1"
 		"xpos"		"0"
-		"ypos"		"0" // 1 TLC
-		"ypos_minmode"	"0" // 2 TLC
+		"ypos"		"120" // 1 TLC
+		"ypos_minmode"	"110" // 2 TLC
 		"wide"		"640"
 		"tall"		"480"
 	}
@@ -464,6 +464,7 @@
 		"RightJustify"	"1"	// If 1, draw notices from the right
 		
 		"TextFont"		"Default" // 5 KF
+		"TextFont"		"Default" [$!WINDOWS]
 		
 		"TeamBlue"		"G_KillfeedBlue"
 		"TeamRed"		"G_KillfeedRed"
@@ -1194,12 +1195,12 @@
 	{
 		"ControlName"			"EditablePanel"
 		"fieldName"				"HudAchievementTracker"
-		"xpos"					"5"		// 3 TLC
-		"xpos_minmode"			"5"		// 4 TLC
-		"NormalY"				"10"	// 5 TLC
-		"EngineerY"				"170"	// 6 TLC
-		"NormalY_minmode"		"10"	// 7 TLC
-		"EngineerY_minmode"		"170"	// 8 TLC
+		"xpos"					"2"		// 3 TLC
+		"xpos_minmode"			"c-260"		// 4 TLC
+		"NormalY"				"135"	// 5 TLC
+		"EngineerY"				"300"	// 6 TLC
+		"NormalY_minmode"		"380"	// 7 TLC
+		"EngineerY_minmode"		"360"	// 8 TLC
 		"zpos"					"2"
 		"wide"					"200"
 		"tall"					"280"

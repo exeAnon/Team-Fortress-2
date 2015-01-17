@@ -274,18 +274,12 @@
 				"ControlName"		"Label"
 				"fieldName"		"BarChartLabelA"
 				"font"			"ScoreboardVerySmall"
-				"font_hidef"	"Default"
 				"labelText"		"#StatSummary_StatTitle_MostPoints"
 				"textAlignment"		"east"
 				"xpos"			"c-282"
-				"xpos_hidef"			"c-210"
-				"xpos_lodef"			"c-210"
 				"ypos"			"182"
-				"ypos_hidef"			"49"
-				"ypos_lodef"			"49"
 				"zpos"			"5"
-				"wide"			"150" [$WIN32]
-				"wide"			"170" [$X360]
+				"wide"			"150"
 				"tall"			"20"
 				"autoResize"	"0"
 				"pinCorner"		"0"
@@ -297,15 +291,10 @@
 				"ControlName"		"Label"
 				"fieldName"		"BarChartLabelB"
 				"font"			"ScoreboardVerySmall"
-				"font_hidef"	"Default"
 				"labelText"		"#StatSummary_StatTitle_TotalPlaytime"
 				"textAlignment"		"west"
 				"xpos"			"c-127"
-				"xpos_hidef"			"c-35"
-				"xpos_lodef"			"c-35"
 				"ypos"			"182"
-				"ypos_hidef"			"49"
-				"ypos_lodef"			"49"
 				"zpos"			"5"
 				"wide"			"150"
 				"tall"			"20"
@@ -436,8 +425,8 @@
 			"labelText"		"#StatSummary_Label_PerformanceReport"
 			"textAlignment"		"west"
 			"xpos"			"c-285"
-			"ypos"			"140" [$WIN32]
-			"ypos"			"185" [!$WIN32]
+			"ypos"			"140" [$WINDOWS]
+			"ypos"			"185" [!$WINDOWS]
 			"wide"			"300"
 			"tall"			"20"
 			"autoResize"	"0"
@@ -1811,14 +1800,13 @@
 			"labelText"		"#StatSummary_Label_BestMoments"
 			"textAlignment"		"west"
 			"xpos"			"c+124"
-			"ypos"			"140" [$WIN32]
-			"ypos"			"140" [!$WIN32]
+			"ypos"			"140" [$WINDOWS]
+			"ypos"			"140" [!$WINDOWS]
 			"wide"			"300"
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"0"	[$WIN32]
-			"visible"		"0"	[$X360]
+			"visible"		"0"
 			"enabled"		"0"
 		}							
 		"RecordsSubBG1"
@@ -1852,8 +1840,7 @@
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"0"	[$WIN32]
-			"visible"		"1"	[$X360]
+			"visible"		"0"
 			"enabled"		"1"
 		}	
 		"OverallRecord1Label"
@@ -2447,7 +2434,7 @@
 		"enabled"		"1"
 		"wrap"			"1"
 	}
-	"NextTipButton" [$WIN32]
+	"NextTipButton" [$WINDOWS]
 	{
 		"ControlName"		"Button"
 		"fieldName"		"NextTipButton"
@@ -2467,7 +2454,7 @@
 		"brighttext"	"0"
 		"Command"		"nexttip"
 	}
-	"ResetStatsButton" [$WIN32]
+	"ResetStatsButton" [$WINDOWS]
 	{
 		"ControlName"		"Button"
 		"fieldName"		"ResetStatsButton"
@@ -2487,7 +2474,7 @@
 		"brighttext"	"0"
 		"Command"		"resetstatsbutton"
 	}
-	"CloseButton" [$WIN32]
+	"CloseButton" [$WINDOWS]
 	{
 		"ControlName"		"Button"
 		"fieldName"		"CloseButton"

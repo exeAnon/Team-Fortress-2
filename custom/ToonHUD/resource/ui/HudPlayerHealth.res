@@ -13,6 +13,9 @@
 		"enabled"			"1"
 		"textAlignment"		"center"
 		"font"				"G_Crosshair"
+		
+		// Hide from Mac/Linux
+		"visible"		"0" [!$WINDOWS]
 	
 
 		// ==============================================================================
@@ -21,7 +24,7 @@
 	
 		// Enable crosshair (0/1)
 		
-			"visible"			"0"				    								// FC1
+			"visible"			"0"	[$WINDOWS]			    						// FC1
 			
 		
 		// Shape of the crosshair (A-R, check Overrides/crosshairs.png)
@@ -56,6 +59,9 @@
 		"tall"				"40"
 		"enabled"			"1"
 		"textAlignment"		"center"
+		
+		// Hide from Mac/Linux
+		"visible"		"0" [!$WINDOWS]
 	
 		// ==============================================================================
 		// CROSSHAIR SHADOW
@@ -63,7 +69,7 @@
 		
 		// Enable crosshair shadow (0/1)
 		
-			"visible"			"0"							        				// FCS1
+			"visible"			"0"		[$WINDOWS]						      		// FCS1
 			
 		
 		// Shape of the crosshair shadow (A-R, check Overrides/crosshairs.png)
@@ -105,6 +111,9 @@
 		"tall"				"40"
 		"enabled"			"1"
 		"textAlignment"		"center"
+		
+		// Hide from Mac/Linux
+		"visible"		"0" [!$WINDOWS]
 	
 		// ==============================================================================
 		// SECOND CROSSHAIR SHADOW (duplicate crosshair shadow to make it darker)
@@ -112,7 +121,7 @@
 		
 		// Enable second crosshair shadow (0/1)
 		
-			"visible"			"0"							        					// FCS1 2
+			"visible"			"0"	[$WINDOWS]							        		// FCS1 2
 			
 		
 		// Shape of the second crosshair shadow (A-R, check Overrides/crosshairs.png)
@@ -154,13 +163,16 @@
 		"font"				"G_Hitmarker"
 		"Alpha"				"0"
 		
+		// Hide from Mac/Linux
+		"visible"		"0" [!$WINDOWS]
+		
 		// ==============================================================================
 		// FONT HITMARKER
 		// ==============================================================================
 		
 		// Enable hitmarker (0/1) (If enabled, disable regular hitmarker from below)
 		
-			"visible"			"0"														// FH1
+			"visible"			"0"	[$WINDOWS]											// FH1
 		
 		
 		// Shape of the hitmarker (A-R, check Overrides/crosshairs.png)
@@ -213,7 +225,7 @@
 	// ==============================================================================
 	// ==============================================================================
 	
-
+	
 	// player health data
 	"HudPlayerHealth"
 	{
@@ -584,6 +596,135 @@
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"image"			""
+		"fgcolor"		"TanDark"
+	}
+	
+	"PlayerStatus_RuneStrength"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatus_RuneStrength"
+		"xpos"			"0"
+		"ypos"			"r114"
+		"ypos_minmode"	"c+26"
+		"zpos"			"7"
+		"wide"			"31"
+		"tall"			"31"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"image"			"../Effects/powerup_strength_hud"
+		"fgcolor"		"TanDark"
+	}
+	"PlayerStatus_RuneHaste"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatus_RuneHaste"
+		"xpos"			"0"
+		"ypos"			"r114"
+		"ypos_minmode"	"c+26"
+		"zpos"			"7"
+		"wide"			"31"
+		"tall"			"31"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"image"			"../Effects/powerup_haste_hud"
+		"fgcolor"		"TanDark"
+	}
+	"PlayerStatus_RuneRegen"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatus_RuneRegen"
+		"xpos"			"0"
+		"ypos"			"r114"
+		"ypos_minmode"	"c+26"
+		"zpos"			"7"
+		"wide"			"31"
+		"tall"			"31"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"image"			"../Effects/powerup_regen_hud"
+		"fgcolor"		"TanDark"
+	}
+	"PlayerStatus_RuneResist"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatus_RuneResist"
+		"xpos"			"0"
+		"ypos"			"r114"
+		"ypos_minmode"	"c+26"
+		"zpos"			"7"
+		"wide"			"31"
+		"tall"			"31"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"image"			"../Effects/powerup_resist_hud"
+		"fgcolor"		"TanDark"
+	}
+	"PlayerStatus_RuneVampire"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatus_RuneVampire"
+		"xpos"			"0"
+		"ypos"			"r114"
+		"ypos_minmode"	"c+26"
+		"zpos"			"7"
+		"wide"			"31"
+		"tall"			"31"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"image"			"../Effects/powerup_vampire_hud"
+		"fgcolor"		"TanDark"
+	}
+	"PlayerStatus_RuneWarlock"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatus_RuneWarlock"
+		"xpos"			"0"
+		"ypos"			"r114"
+		"ypos_minmode"	"c+26"
+		"zpos"			"7"
+		"wide"			"31"
+		"tall"			"31"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"image"			"../Effects/powerup_warlock_hud"
+		"fgcolor"		"TanDark"
+	}
+	"PlayerStatus_RunePrecision"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatus_RunePrecision"
+		"xpos"			"0"
+		"ypos"			"r114"
+		"ypos_minmode"	"c+26"
+		"zpos"			"7"
+		"wide"			"31"
+		"tall"			"31"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"image"			"../Effects/powerup_precision_hud"
+		"fgcolor"		"TanDark"
+	}
+	"PlayerStatus_RuneAgility"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatus_RuneAgility"
+		"xpos"			"0"
+		"ypos"			"r114"
+		"ypos_minmode"	"c+26"
+		"zpos"			"7"
+		"wide"			"31"
+		"tall"			"31"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"image"			"../Effects/powerup_agility_hud"
 		"fgcolor"		"TanDark"
 	}
 }

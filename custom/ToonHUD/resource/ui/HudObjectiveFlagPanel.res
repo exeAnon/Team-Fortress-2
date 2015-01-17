@@ -238,12 +238,12 @@
 		"font"			"G_Slash"
 		"labelText"		"/"
 		"textAlignment"	"west"
-		"xpos"			"c-10" [$WIN32]
-		"xpos"			"c-11" [!$WIN32]
+		"xpos"			"c-10" [$WINDOWS]
+		"xpos"			"c-11" [!$WINDOWS]
 		"ypos"			"r26"
 		"wide"			"20"
-		"tall"			"20" [$WIN32]
-		"tall"			"21" [!$WIN32]
+		"tall"			"20" [$WINDOWS]
+		"tall"			"21" [!$WINDOWS]
 		"zpos"			"4"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -399,7 +399,7 @@
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"OutlineImage"
 		"xpos"			"c-50"
-		"ypos"			"r127"	[$WIN32]
+		"ypos"			"r127"	[$WINDOWS]
 		"ypos"			"r148"	[$X360]
 		"zpos"			"9"
 		"wide"			"100"

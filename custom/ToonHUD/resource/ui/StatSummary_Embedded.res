@@ -25,7 +25,7 @@
 		"image"			""
 		"scaleImage"		"1"
 	}
-	"OnYourWayLabel" [$WIN32]
+	"OnYourWayLabel" [$WINDOWS]
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"OnYourWayLabel"
@@ -46,18 +46,18 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"MapLabel"
-		"font"			"HudFontMediumBigBold" [$WIN32]
+		"font"			"HudFontMediumBigBold" [$WINDOWS]
 		"font"			"HudFontMediumBold" [$X360]
 		"labelText"		"%maplabel%"
-		"textAlignment"		"center" [$WIN32]
+		"textAlignment"		"center" [$WINDOWS]
 		"textAlignment"		"west" [$X360]
-		"xpos"			"5" [$WIN32]
+		"xpos"			"5" [$WINDOWS]
 		"xpos"			"60" [$X360]
 		"ypos"			"92"
 		"ypos_hidef"		"425"
 		"ypos_lodef"		"425"
 		"zpos"			"50"
-		"wide"			"350" [$WIN32]
+		"wide"			"350" [$WINDOWS]
 		"wide"			"600" [$X360]
 		"tall"			"35"
 		"autoResize"	"0"
@@ -65,7 +65,7 @@
 		"visible"		"0"
 		"enabled"		"1"
 	}
-	"MapType" [$WIN32]
+	"MapType" [$WINDOWS]
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"MapType"
@@ -285,8 +285,8 @@
 			"xpos"			"c-285"
 			"xpos_hidef"			"c-193"
 			"xpos_lodef"			"c-193"
-			"ypos"			"170" [$WIN32]
-			"ypos"			"185" [!$WIN32]
+			"ypos"			"170" [$WINDOWS]
+			"ypos"			"185" [!$WINDOWS]
 			"ypos_hidef"			"32"
 			"ypos_lodef"			"32"
 			"wide"			"300"
@@ -1669,14 +1669,13 @@
 			"labelText"		"#StatSummary_Label_BestMoments"
 			"textAlignment"		"west"
 			"xpos"			"c+124"
-			"ypos"			"170" [$WIN32]
-			"ypos"			"180" [!$WIN32]
+			"ypos"			"170" [$WINDOWS]
+			"ypos"			"180" [!$WINDOWS]
 			"wide"			"300"
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"1"	[$WIN32]
-			"visible"		"0"	[$X360]
+			"visible"		"0"
 			"enabled"		"1"
 		}							
 		"RecordsSubBG1"
@@ -1710,8 +1709,7 @@
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"0"	[$WIN32]
-			"visible"		"1"	[$X360]
+			"visible"		"0"
 			"enabled"		"1"
 		}	
 		"OverallRecord1Label"
@@ -2260,8 +2258,8 @@
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"TipImage"
 		"xpos"			"c-285"
-		"ypos"			"340" [$WIN32]
-		"ypos"			"335" [!$WIN32]
+		"ypos"			"340" [$WINDOWS]
+		"ypos"			"335" [!$WINDOWS]
 		"zpos"			"12"
 		"wide"			"40"
 		"tall"			"40"
@@ -2288,14 +2286,14 @@
 		"enabled"		"1"
 		"wrap"			"1"
 	}
-	"NextTipButton" [$WIN32]
+	"NextTipButton"
 	{
-		"ControlName"		"Button"
+		"ControlName"	"Button"
 		"fieldName"		"NextTipButton"
 		"font"			"Default"
 		"xpos"			"c-235"
-		"ypos"			"365" [$WIN32]
-		"ypos"			"360" [!$WIN32]
+		"ypos"			"365" [$WINDOWS]
+		"ypos"			"360" [!$WINDOWS]
 		"zpos"			"6"
 		"wide"			"40"
 		"tall"			"15"
@@ -2310,9 +2308,9 @@
 		"brighttext"	"0"
 		"Command"		"nexttip"
 	}
-	"ResetStatsButton" [$WIN32]
+	"ResetStatsButton"
 	{
-		"ControlName"		"Button"
+		"ControlName"	"Button"
 		"fieldName"		"ResetStatsButton"
 		"xpos"			"c124"
 		"ypos"			"287"
@@ -2330,7 +2328,7 @@
 		"brighttext"	"0"
 		"Command"		"resetstatsbutton"
 	}
-	"CloseButton" [$WIN32]
+	"CloseButton" [$WINDOWS]
 	{
 		"ControlName"		"Button"
 		"fieldName"		"CloseButton"

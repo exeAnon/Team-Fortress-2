@@ -13,15 +13,15 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
-		"settitlebarvisible"	"0" [$WIN32]
-		"settitlebarvisible"	"1" [!$WIN32]
+		"settitlebarvisible"	"0" [$WINDOWS]
+		"settitlebarvisible"	"1" [!$WINDOWS]
 		"PaintBackgroundType"	"0"
-		"bgcolor_override"				"46 43 42 0" [$WIN32]
-		"infocus_bgcolor_override"		"46 43 42 0" [$WIN32]
-		"outoffocus_bgcolor_override"	"46 43 42 0" [$WIN32]
-		"bgcolor_override"				"46 43 42 255" [!$WIN32]
-		"infocus_bgcolor_override"		"46 43 42 255" [!$WIN32]
-		"outoffocus_bgcolor_override"	"46 43 42 255" [!$WIN32]
+		"bgcolor_override"				"46 43 42 0" [$WINDOWS]
+		"infocus_bgcolor_override"		"46 43 42 0" [$WINDOWS]
+		"outoffocus_bgcolor_override"	"46 43 42 0" [$WINDOWS]
+		"bgcolor_override"				"46 43 42 255" [!$WINDOWS]
+		"infocus_bgcolor_override"		"46 43 42 255" [!$WINDOWS]
+		"outoffocus_bgcolor_override"	"46 43 42 255" [!$WINDOWS]
 		
 		"title"			""
 		"title_font"	"G_FontTiny"
@@ -32,8 +32,8 @@
 		"titlebarbgcolor_override"				"46 43 42 255"
 		
 		"clientinsetx_override"			"0"
-		"sheetinset_bottom"				"60" [$WIN32]
-		"sheetinset_bottom"				"50" [!$WIN32]
+		"sheetinset_bottom"				"60" [$WINDOWS]
+		"sheetinset_bottom"				"50" [!$WINDOWS]
 	}
 	
 	"BackgroundHeader"

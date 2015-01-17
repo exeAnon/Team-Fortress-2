@@ -27,7 +27,7 @@ Scheme
 		"G_LightShadow"			"0 0 0 110"
 		"G_Dying"				"212 0 0 230"
 		"G_Heal"				"127 224 74 255" // Heal color
-		"G_Hit"					"235 220 50 255" // Hit color
+		"G_Hit"					"255 0 0 255" // Hit color
 		"G_Brown"				"49 44 41 255"
 		"G_Yellow"				"235 220 50 255"
 		"G_HealthBorder"		"25 25 25 255"
@@ -77,15 +77,15 @@ Scheme
 		"G_TeamButtonRedArmed"	"209 78 78 255"		
 		"G_Footer"			"45 41 37 255"
 		"G_OuterBorder"		"0 0 0 255" // Outer border color
-		"G_InnerBorder"		"255 255 255 50" // Inner border color
+		"G_InnerBorder"		"255 255 255 255" // Inner border color
 		"G_ItemEffectMeterLineColor"	"120 120 120 130"
 		"G_KillfeedBlue"	"104 124 155 255" // Killfeed blue text
 		"G_KillfeedRed"		"180 92 77 255" // Killfeed red text
 		"G_KillfeedIcon"	"255 255 255 255" // Killfeed icon color
 		"G_CustomHealthValue"	"120 120 120 255"
-		"G_MainMenuOverlay"	"0 128 255 0" // Main Menu overlay color
-		"G_MainMenuButton"	"41 37 38 190" // Main Menu button color
-		"G_MainMenuButtonHover"	"41 37 38 255" // Main Menu hovered button color
+		"G_MainMenuOverlay"	"17 196 255 0" // Main Menu overlay color
+		"G_MainMenuButton"	"0 0 0 190" // Main Menu button color
+		"G_MainMenuButtonHover"	"0 0 0 255" // Main Menu hovered button color
 		
 	
 		// base colors
@@ -93,7 +93,7 @@ Scheme
 		"OrangeDim"			"178 82 22 120"
 		"LightOrange"		"188 112 0 128"
 		"GoalOrange"		"255 133 0"
-		"TFOrange"			"145 73 59 255"
+		"TFOrange"			"151 51 51 255" // ToonHUD color
 		
 		"White"				"235 235 235 255"
 		"Red"				"192 28 0 140"
@@ -191,21 +191,21 @@ Scheme
 		"ItemFlags"								"117 107 94 255"
 		"ItemLimitedQuantity"					"225 209 0 255"
 		
-		"QualityColorNormal"					"178 178 178 255"
-		"QualityColorrarity1"					"77 116 85 255"
+		"QualityColorNormal"					"178 178 178 255" // IQC Normal
+		"QualityColorrarity1"					"77 116 85 255" // IQC Genuine
 		"QualityColorrarity2"					"141 131 75 255"
 		"QualityColorrarity3"					"204 204 250 255"
-		"QualityColorrarity4"					"134 80 172 255"
-		"QualityColorVintage"					"71 98 145 255"
-		"QualityColorUnique"					"255 215 0 255"
-		"QualityColorCommunity"					"112 176 74 255"
-		"QualityColorDeveloper"					"165 15 121 255"
-		"QualityColorSelfMade"					"112 176 74 255"
+		"QualityColorrarity4"					"134 80 172 255" // IQC Unusual
+		"QualityColorVintage"					"71 98 145 255" // IQC Vintage
+		"QualityColorUnique"					"255 215 0 255" // IQC Unique
+		"QualityColorCommunity"					"112 176 74 255" // IQC Community
+		"QualityColorDeveloper"					"165 15 121 255" // IQC Valve
+		"QualityColorSelfMade"					"112 176 74 255" // IQC Community
 		"QualityColorCustomized"				"71 98 145 255"
-		"QualityColorStrange"					"207 106 50 255"
+		"QualityColorStrange"					"207 106 50 255" // IQC Strange
 		"QualityColorCompleted"					"134 80 172 255"
-		"QualityColorHaunted"					"56 243 171 255"
-		"QualityColorCollectors"				"170 0 0 255"
+		"QualityColorHaunted"					"56 243 171 255" // IQC Haunted
+		"QualityColorCollectors"				"170 0 0 255" // IQC Collectors
 
 		"QualityColorNormal_GreyedOut"			"44 44 44 255"
 		"QualityColorrarity1_GreyedOut"			"20 29 21 255"
@@ -342,10 +342,10 @@ Scheme
 		ListPanel.SelectedOutOfFocusBgColor	"Red"
 		ListPanel.EmptyListInfoTextColor	"Orange"
 
-		Menu.TextColor					"TanLight"
-		Menu.BgColor					"TransparentBlack"
-		Menu.ArmedTextColor				"TanDark"
-		Menu.ArmedBgColor				"TanLight"
+		Menu.TextColor					"G_White"
+		Menu.BgColor					"0 0 0 255"
+		Menu.ArmedTextColor				"G_White"
+		Menu.ArmedBgColor				"G_ToonHUD"
 		Menu.TextInset					"6"
 
 		Chat.TypingText					"Orange"
@@ -577,8 +577,8 @@ Scheme
 			"1"
 			{
 				"name"			"ToonHUD Icons"
-				"tall"			"23"
-				"tall"			"37" [!$WIN32]
+				"tall"			"23" [$WINDOWS]
+				"tall"			"37" [!$WINDOWS]
 				"weight"		"400"
 				"additive"		"0"
 				"antialias" 	"1"
@@ -590,8 +590,8 @@ Scheme
 			"1"
 			{
 				"name"			"ToonHUD Icons"
-				"tall"			"19"
-				"tall"			"30" [!$WIN32]
+				"tall"			"19" [$WINDOWS]
+				"tall"			"30" [!$WINDOWS]
 				"weight"		"400"
 				"additive"		"0"
 				"antialias" 	"1"
@@ -603,8 +603,8 @@ Scheme
 			"1"
 			{
 				"name"			"ToonHUD Icons"
-				"tall"			"20"
-				"tall"			"25" [!$WIN32]
+				"tall"			"20" [$WINDOWS]
+				"tall"			"25" [!$WINDOWS]
 				"weight"		"400"
 				"additive"		"0"
 				"antialias" 	"1"
@@ -616,8 +616,8 @@ Scheme
 			"1"
 			{
 				"name"			"ToonHUD Icons"
-				"tall"			"8"
-				"tall"			"10" [!$WIN32]
+				"tall"			"8" [$WINDOWS]
+				"tall"			"10" [!$WINDOWS]
 				"weight"		"400"
 				"additive"		"0"
 				"antialias" 	"1"
@@ -629,8 +629,8 @@ Scheme
 			"1"
 			{
 				"name"			"ToonHUD Icons"
-				"tall"			"12"
-				"tall"			"18" [!$WIN32]
+				"tall"			"12" [$WINDOWS]
+				"tall"			"18" [!$WINDOWS]
 				"weight"		"400"
 				"additive"		"0"
 				"antialias" 	"1"
@@ -705,8 +705,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Build" // Primary font
-				"name"			"TF2 Build" [!$WIN32]
+				"name"			"TF2 Build" [$WINDOWS] // Primary font
+				"name"			"TF2 Build" [!$WINDOWS]
 				"tall"			"50" // Size Huge Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -718,8 +718,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Build" // Primary font
-				"name"			"TF2 Build" [!$WIN32]
+				"name"			"TF2 Build" [$WINDOWS] // Primary font
+				"name"			"TF2 Build" [!$WINDOWS]
 				"tall"			"43" // Size Big Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -731,8 +731,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Build" // Primary font
-				"name"			"TF2 Build" [!$WIN32]
+				"name"			"TF2 Build" [$WINDOWS] // Primary font
+				"name"			"TF2 Build" [!$WINDOWS]
 				"tall"			"20" // Size Medium Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -744,8 +744,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Build" // Primary font
-				"name"			"TF2 Build" [!$WIN32]
+				"name"			"TF2 Build" [$WINDOWS] // Primary font
+				"name"			"TF2 Build" [!$WINDOWS]
 				"tall"			"12" // Size Small Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -757,8 +757,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Build" // Primary font
-				"name"			"TF2 Build" [!$WIN32]
+				"name"			"TF2 Build" [$WINDOWS] // Primary font
+				"name"			"TF2 Build" [!$WINDOWS]
 				"tall"			"11" // Size Tiny Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -774,8 +774,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Secondary" // Secondary font
-				"name"			"TF2 Secondary" [!$WIN32]
+				"name"			"TF2 Secondary" [$WINDOWS] // Secondary font
+				"name"			"TF2 Secondary" [!$WINDOWS]
 				"tall"			"25" // Size Huge Secondary
 				"weight"		"0"
 				"additive"		"0"
@@ -787,8 +787,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Secondary" // Secondary font
-				"name"			"TF2 Secondary" [!$WIN32]
+				"name"			"TF2 Secondary" [$WINDOWS] // Secondary font
+				"name"			"TF2 Secondary" [!$WINDOWS]
 				"tall"			"19" // Size Big Secondary
 				"weight"		"0"
 				"additive"		"0"
@@ -800,8 +800,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Secondary" // Secondary font
-				"name"			"TF2 Secondary" [!$WIN32]
+				"name"			"TF2 Secondary" [$WINDOWS] // Secondary font
+				"name"			"TF2 Secondary" [!$WINDOWS]
 				"tall"			"16" // Size Medium Secondary
 				"weight"		"0"
 				"additive"		"0"
@@ -813,8 +813,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Secondary" // Secondary font
-				"name"			"TF2 Secondary" [!$WIN32]
+				"name"			"TF2 Secondary" [$WINDOWS] // Secondary font
+				"name"			"TF2 Secondary" [!$WINDOWS]
 				"tall"			"10" // Size Small Secondary
 				"weight"		"0"
 				"additive"		"0"
@@ -826,8 +826,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Secondary" // Secondary font
-				"name"			"TF2 Secondary" [!$WIN32]
+				"name"			"TF2 Secondary" [$WINDOWS] // Secondary font
+				"name"			"TF2 Secondary" [!$WINDOWS]
 				"tall"			"10" // Size Tiny Secondary
 				"weight"		"0"
 				"additive"		"0"
@@ -840,13 +840,13 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Secondary" // Damage font
-				"name"			"TF2 Build" [!$WIN32]
-				"tall"			"20" // Damage size
+				"name"			"TF2" [$WINDOWS] // Damage font
+				"name"			"TF2 Build" [!$WINDOWS]
+				"tall"			"16" // Damage size
 				"weight"		"0"
 				"additive"		"0"
 				"antialias"		"1"
-				"outline"		"1" // Damage outline
+				"outline"		"0" // Damage outline
 			}
 		}
 		
@@ -854,14 +854,13 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Secondary" // Crit damage font
-				"name"			"TF2 Build" [!$WIN32]
-
-				"tall"			"22" // Crit damage size
+				"name"			"TF2 Build" [$WINDOWS] // Crit damage font
+				"name"			"TF2 Build" [!$WINDOWS]
+				"tall"			"24" // Crit damage size
 				"weight"		"0"
 				"additive"		"0"
 				"antialias"		"1"
-				"outline"		"1" // Crit damage outline
+				"outline"		"0" // Crit damage outline
 
 			}
 		}
@@ -891,8 +890,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Build" // Primary font
-				"name"			"TF2 Build" [!$WIN32]
+				"name"			"TF2 Build" [$WINDOWS] // Primary font
+				"name"			"TF2 Build" [!$WINDOWS]
 				"tall"			"50" // Size Huge Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -905,8 +904,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Build" // Primary font
-				"name"			"TF2 Build" [!$WIN32]
+				"name"			"TF2 Build" [$WINDOWS] // Primary font
+				"name"			"TF2 Build" [!$WINDOWS]
 				"tall"			"43" // Size Big Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -919,8 +918,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Build" // Primary font
-				"name"			"TF2 Build" [!$WIN32]
+				"name"			"TF2 Build" [$WINDOWS] // Primary font
+				"name"			"TF2 Build" [!$WINDOWS]
 				"tall"			"20" // Size Medium Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -933,8 +932,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Build" // Primary font
-				"name"			"TF2 Build" [!$WIN32]
+				"name"			"TF2 Build" [$WINDOWS] // Primary font
+				"name"			"TF2 Build" [!$WINDOWS]
 				"tall"			"12" // Size Small Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -947,8 +946,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"TF2 Build" // Primary font
-				"name"			"TF2 Build" [!$WIN32]
+				"name"			"TF2 Build" [$WINDOWS] // Primary font
+				"name"			"TF2 Build" [!$WINDOWS]
 				"tall"			"11" // Size Tiny Primary
 				"weight"		"0"
 				"additive"		"0"
@@ -1299,7 +1298,7 @@ Scheme
 			// note that this scales with the screen resolution
 			"1"
 			{
-				"name"		"Trebuchet MS" [!$OSX]
+				"name"		"Trebuchet MS" [$WINDOWS]
 				"name"		"Helvetica" [!$WIN32]
 				"tall"		"18"
 				"weight"	"900"
@@ -1484,9 +1483,9 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Secondary"
-				"tall"		"24"
-				"weight"	"500"
+				"name"		"Verdana"
+				"tall"		"18"
+				"weight"	"400"
 				"additive"	"0"
 				"antialias" "1"
 			}
@@ -1942,8 +1941,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Secondary" // Closed captions font
-				"name"		"TF2 Secondary" [!$WIN32]
+				"name"		"TF2 Secondary" [$WINDOWS] // Closed captions font
+				"name"		"TF2 Secondary" [!$WINDOWS]
 				"tall"		"24" // Closed captions size
 
 
@@ -1957,8 +1956,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Secondary" // Closed captions font
-				"name"		"TF2 Secondary" [!$WIN32]
+				"name"		"TF2 Secondary" [$WINDOWS] // Closed captions font
+				"name"		"TF2 Secondary" [!$WINDOWS]
 				"tall"		"24" // Closed captions size
 
 
@@ -1973,8 +1972,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Secondary" // Closed captions font
-				"name"		"TF2 Secondary" [!$WIN32]
+				"name"		"TF2 Secondary" [$WINDOWS] // Closed captions font
+				"name"		"TF2 Secondary" [!$WINDOWS]
 				"tall"		"24" // Closed captions size
 
 
@@ -1988,8 +1987,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Secondary" // Closed captions font
-				"name"		"TF2 Secondary" [!$WIN32]
+				"name"		"TF2 Secondary" [$WINDOWS] // Closed captions font
+				"name"		"TF2 Secondary" [!$WINDOWS]
 				"tall"		"24" // Closed captions size
 
 
@@ -2004,8 +2003,8 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Secondary" // Closed captions font
-				"name"		"TF2 Secondary" [!$WIN32]
+				"name"		"TF2 Secondary" [$WINDOWS] // Closed captions font
+				"name"		"TF2 Secondary" [!$WINDOWS]
 				"tall"		"24" // Closed captions size
 
 
@@ -2093,7 +2092,7 @@ Scheme
 				"tall_lodef"	"48"
 				"tall_hidef"	"48"
 				"antialias"		"1" 
-				"custom"		"1" [!$WIN32]
+				"custom"		"1" [!$WINDOWS]
 				"weight"		"500"
 				"weight_lodef"	"800"
 				"weight_hidef"	"1000"
@@ -2108,7 +2107,7 @@ Scheme
 				"tall_lodef"	"48"
 				"tall_hidef"	"48"
 				"antialias"		"1"
-				"custom"		"1" [!$WIN32]
+				"custom"		"1" [!$WINDOWS]
 				"weight"		"500"
 				"weight_lodef"	"800"
 				"weight_hidef"	"1000"
@@ -2123,7 +2122,7 @@ Scheme
 				"tall_lodef"	"36"
 				"tall_hidef"	"36"
 				"antialias" "1"
-				"custom"		"1" [!$WIN32]
+				"custom"		"1" [!$WINDOWS]
 				"weight"	"500"
 			}
 		}
@@ -2132,12 +2131,12 @@ Scheme
 			"1"
 			{
 				"name"			"TF2 Professor"
-				"tall"			"14" [!$OSX]
-				"tall"			"15" [!$WIN32]
+				"tall"			"14" [$WINDOWS]
+				"tall"			"15" [!$WINDOWS]
 				"tall_lodef"	"32"
 				"tall_hidef"	"32"
 				"antialias"		"1"
-				"custom"		"1" [!$WIN32]
+				"custom"		"1" [!$WINDOWS]
 				"weight"		"500"
 			}
 		}
@@ -2521,8 +2520,8 @@ Scheme
 			"1"
 			{
 				"name"		"Verdana"
-				"tall"		"11"  [!$OSX]
-				"tall"		"9"  [!$WIN32]
+				"tall"		"11" [$WINDOWS]
+				"tall"		"9"  [!$WINDOWS]
 				"weight"	"800"
 				"additive"	"0"
 				"antialias" 	"1"

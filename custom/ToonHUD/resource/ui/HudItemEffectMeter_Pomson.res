@@ -7,8 +7,8 @@
 		"enabled"		"1"
 		"xpos"			"c100"
 		"xpos_minmode"	"c80"
-		"ypos"			"r10"
-		"ypos_minmode"	"r110"
+		"ypos"			"r32" // override
+		"ypos_minmode"	"r132" // override
 		"wide"			"180"
 		"tall"			"30"
 		"MeterFG"		"White"

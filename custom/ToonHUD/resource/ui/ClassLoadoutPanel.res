@@ -284,15 +284,15 @@
 		"ypos"			"332"
 		"zpos"			"0"	
 		"wide"			"270"
-		"tall"			"56" [$WIN32]
-		"tall"			"50" [!$WIN32]
+		"tall"			"56" [$WINDOWS]
+		"tall"			"50" [!$WINDOWS]
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		""
-		"textAlignment"	"center" [$WIN32]
-		"textAlignment"	"north" [!$WIN32]
+		"textAlignment"	"center" [$WINDOWS]
+		"textAlignment"	"north" [!$WINDOWS]
 		"fgcolor"		"255 215 0 255"
 		"centerwrap"	"1"
 	}
@@ -464,8 +464,8 @@
 		"fieldName"		"CharacterLoadoutButton"
 		"labelText"		""
 		"xpos"			"c+239"
-		"ypos"			"347" [$WIN32]
-		"ypos"			"339" [!$WIN32]
+		"ypos"			"347" [$WINDOWS]
+		"ypos"			"339" [!$WINDOWS]
 		"zpos"			"2"
 		"wide"			"25"
 		"tall"			"25"
@@ -503,8 +503,8 @@
 		"fieldName"		"TauntLoadoutButton"
 		"labelText"		""
 		"xpos"			"c+266"
-		"ypos"			"347" [$WIN32]
-		"ypos"			"339" [!$WIN32]
+		"ypos"			"347" [$WINDOWS]
+		"ypos"			"339" [!$WINDOWS]
 		"zpos"			"2"
 		"wide"			"25"
 		"tall"			"25"
@@ -735,8 +735,8 @@
 		"labelText"		"Zoom:"
 		"textAlignment"	"east"
 		"xpos"			"c-340"
-		"ypos"			"336" [$WIN32]
-		"ypos"			"328" [!$WIN32]
+		"ypos"			"336" [$WINDOWS]
+		"ypos"			"328" [!$WINDOWS]
 		"zpos"			"1"
 		"wide"			"75"
 		"tall"			"10"
@@ -755,8 +755,8 @@
 		"labelText"		"MOUSE2"
 		"textAlignment"	"west"
 		"xpos"			"c-263"
-		"ypos"			"336" [$WIN32]
-		"ypos"			"328" [!$WIN32]
+		"ypos"			"336" [$WINDOWS]
+		"ypos"			"328" [!$WINDOWS]
 		"zpos"			"1"
 		"wide"			"73"
 		"tall"			"10"
@@ -775,8 +775,8 @@
 		"labelText"		"Move:"
 		"textAlignment"	"east"
 		"xpos"			"c-340"
-		"ypos"			"346" [$WIN32]
-		"ypos"			"338" [!$WIN32]
+		"ypos"			"346" [$WINDOWS]
+		"ypos"			"338" [!$WINDOWS]
 		"zpos"			"1"
 		"wide"			"75"
 		"tall"			"10"
@@ -795,8 +795,8 @@
 		"labelText"		"Shift"
 		"textAlignment"	"west"
 		"xpos"			"c-263"
-		"ypos"			"346"
-		"ypos"			"338" [!$WIN32]
+		"ypos"			"346" [$WINDOWS]
+		"ypos"			"338" [!$WINDOWS]
 		"zpos"			"1"
 		"wide"			"73"
 		"tall"			"10"
@@ -815,8 +815,8 @@
 		"labelText"		"Rotate:"
 		"textAlignment"	"east"
 		"xpos"			"c-340"
-		"ypos"			"356" [$WIN32]
-		"ypos"			"348" [!$WIN32]
+		"ypos"			"356" [$WINDOWS]
+		"ypos"			"348" [!$WINDOWS]
 		"zpos"			"1"
 		"wide"			"75"
 		"tall"			"10"
@@ -835,8 +835,8 @@
 		"labelText"		"Alt"
 		"textAlignment"	"west"
 		"xpos"			"c-263"
-		"ypos"			"356" [$WIN32]
-		"ypos"			"348" [!$WIN32]
+		"ypos"			"356" [$WINDOWS]
+		"ypos"			"348" [!$WINDOWS]
 		"zpos"			"1"
 		"wide"			"73"
 		"tall"			"10"
@@ -855,8 +855,8 @@
 		"labelText"		"Change lighting:"
 		"textAlignment"	"east"
 		"xpos"			"c-340"
-		"ypos"			"366" [$WIN32]
-		"ypos"			"358" [!$WIN32]
+		"ypos"			"366" [$WINDOWS]
+		"ypos"			"358" [!$WINDOWS]
 		"zpos"			"1"
 		"wide"			"75"
 		"tall"			"10"
@@ -875,8 +875,8 @@
 		"labelText"		"Ctrl"
 		"textAlignment"	"west"
 		"xpos"			"c-263"
-		"ypos"			"366" [$WIN32]
-		"ypos"			"358" [!$WIN32]
+		"ypos"			"366" [$WINDOWS]
+		"ypos"			"358" [!$WINDOWS]
 		"zpos"			"1"
 		"wide"			"73"
 		"tall"			"10"
